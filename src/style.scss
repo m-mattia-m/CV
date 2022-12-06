@@ -1,0 +1,43 @@
+@import url("normalize.css/normalize.css");
+@import url("@fortawesome/fontawesome-free/css/all.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+$margin-space: 32;
+[x-cloak] {
+    @apply hidden;
+}
+
+body,
+.body {
+    @apply h-full;
+    @apply w-full;
+}
+
+main,
+.main {
+    @apply h-full;
+    @apply w-full;
+}
+
+h1,
+.h1 {
+    @apply text-4xl;
+    @apply mb-3;
+}
+
+h2,
+.h2 {
+    @apply text-3xl;
+    @apply mb-3;
+}
+
+h3,
+.h3 {
+    @apply text-2xl;
+    @apply mb-2;
+}
+
+p {
+    @apply mb-1;
+}
