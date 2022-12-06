@@ -1,36 +1,43 @@
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//     content: [
-//         "./index.html"
-//     ],
-//     theme: {
-//         extend: {},
-//     },
-//     plugins: [],
-// }
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['./index.html'],
     darkMode: 'media',
     theme: {
         fontFamily: {
-            sans: ['IBM Plex Sans', 'sans-serif'],
-            serif: ['IBM Plex Serif', 'serif'],
-            mono: ['IBM Plex Mono', 'monospace'],
+            // sans: ['IBM Plex Sans', 'sans-serif'],
+            // serif: ['IBM Plex Serif', 'serif'],
+            // mono: ['IBM Plex Mono', 'monospace'],
+            // sans: ['IBM-3270', import("./assets/fonts/IBM-3270/3270-Regular.woff")],
+            sans: ['IBM-3270', 'IBM 3270'],
         },
         extend: {
             colors: {
-                primary: '#8ECAE6',
-                secondary: '#FB8500',
-                tertiary: '#023047',
+                dark: '#1E1E1E',
+                primary: '#0B4F6C',
+                secondary: '#05374D',
+                tertiary: '#087E8B',
+                quaternary: '#12B4C5',
+                light: '#FBFBFF',
             },
             margin: {
-                sitedefault: '6rem',
+                "site-default": '10rem',
+                "tablet": '6rem',
+                "mobile": '1.5rem',
             },
             padding: {
-                sitedefault: '6rem',
+                "site-default": '10rem',
+                "tablet": '6rem',
+                "mobile": '1.5rem',
+            },
+            spacing: {
+                "site-default": '10rem',
+                "tablet": '6rem',
+                "mobile": '1.5rem',
+            },
+            transitionDelay: {
+                primary: "200ms",
             }
+
         },
     },
     plugins: [],
