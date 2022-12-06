@@ -8,10 +8,19 @@ $margin-space: 32;
     @apply hidden;
 }
 
+@font-face {
+    font-family: "IBM 3270";
+    src: url("../assets/fonts/IBM-3270/3270-Regular.woff") format('woff');
+}
+
 body,
 .body {
     @apply h-full;
     @apply w-full;
+    @apply text-center;
+    @apply uppercase;
+    //@apply font-sans;
+    font-family: "IBM 3270";
 }
 
 main,
@@ -40,4 +49,48 @@ h3,
 
 p {
     @apply mb-1;
+}
+
+section {
+    @apply h-screen;
+    @apply w-screen;
+}
+
+.home {
+    @apply bg-secondary;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply text-light;
+    @apply flex-col;
+}
+
+.title {
+    @apply text-left;
+    @apply mx-mobile;
+    @apply my-mobile;
+    @apply text-6xl;
+}
+
+.home--title {
+    @apply text-center;
+    @apply mx-0;
+    @apply my-0;
+}
+
+.switch {
+    @apply w-20;
+    @apply h-12;
+    @apply bg-light;
+    @apply bottom-mobile;
+    @apply absolute;
+    @apply text-secondary;
+}
+
+.home--switch--languages {
+    @apply left-mobile;
+}
+
+.home--switch--themes {
+    @apply right-mobile;
 }

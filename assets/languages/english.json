@@ -1,0 +1,22 @@
+[
+  {
+    "name": "title-section-1",
+    "value": "About me"
+  },
+  {
+    "name": "title-section-2",
+    "value": "Hobbies"
+  },
+  {
+    "name": "title-section-3",
+    "value": "Skills"
+  },
+  {
+    "name": "title-section-4",
+    "value": "Past works"
+  },
+  {
+    "name": "title-section-5",
+    "value": "Private Projects"
+  }
+]
