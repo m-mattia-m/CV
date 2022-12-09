@@ -18,5 +18,25 @@
   {
     "name": "title-section-5",
     "value": "Private Projects"
+  },
+  {
+    "name": "text-section-1",
+    "value": "Hi, my name is Mattia Müggler. I'm 19 years old and I'm currently in the 4th year of my apprenticeship, which I'm doing at Raiffesen Switzerland. I live together with my family in Zuzwil. "
+  },
+  {
+    "name": "text-section-2",
+    "value": ["Snowboarding", "Develop Private Projects", "Do something with friends", "Jugendparlament St. Gallen"]
+  },
+  {
+    "name": "text-section-3",
+    "value": ["Programming languages:", ["Main", ["Go", "Java", "JS / TS"]], ["Besides", ["Python", "PHP", "C", "C++", "C# (.NET)"]], "Devops", ["Openshift", "Gitlab / (Github)", "Docker"], "More", ["Angular", "Zitadel", "Plausible", "Wordpress"]]
+  },
+  {
+    "name": "text-section-4",
+    "value": "My group offers a self-service platform where developers can create their own project. One can create Openshift namespaces, Gitlab groups/projects and Artifactory repositories on it. Further, one could authorize the collaborators from the group to the different projects and customize existing projects. for example, an Openshift namespace resize the quota. This was developed for the external development environment as well as the internal environment. The backend was solved with Go and a microservice architecture and the frontend with Angular."
+  },
+  {
+    "name": "text-section-5",
+    "value": ["Bookspread: Is a platform for authors to search and filter for publishers. They can see which publisher publishes which genres and might suit them. Further, they can add the publishers to their list and then submit all the required documents directly through the platform. The intelligent submission form checks what all is needed from the publishers and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein Youth Project Competition and thus qualified for the interregional (St. Gallen, Liechtenstein, Vorarlberg) Youth Project Competition, which we also won.", "CRM: I developed a Customer Relation Management System (CRM) for my mother's partner and customized it to his needs. The goal was to create a platform where he and his employee can record customers and file rapports to a customer, so they can see when, what was agreed.", "Möbilo: Before we developed Bookspread, we started developing Möbilo and also completed the first functions with it. With the tool, we wanted to provide carpenters with an online tool so that their customers could put together a product online and a quote would be generated directly. But after talking to several carpentry companies, we came to the conclusion that there was no real interest, that the effort would be worthwhile."]
   }
 ]

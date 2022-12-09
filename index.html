@@ -2,76 +2,87 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
 
-    <link rel="stylesheet" href="./src/style.scss" />
+    <link rel="stylesheet" href="./src/style.scss"/>
 
     <script type="module" src="./src/app.js"></script>
 </head>
 
 <body>
-    <div id="app" x-cloak x-data="homeComponent">
-        <header></header>
-        <main>
-            <section id="home" class="home">
-                <div class="home--title title">
-                    <span>Mattia Müggler</span>
+<div id="app" x-cloak x-data="homeComponent">
+    <header></header>
+    <main>
+        <section id="home" class="home">
+            <div class="home--title title">
+                <span class="home--title--text">Mattia Müggler</span>
+            </div>
+            <div class="home--icons">
+                <i class="fa-brands fa-github icon"></i>
+                <i class="fa-brands fa-linkedin icon"></i>
+            </div>
+            <div class="home--switch">
+                <div class="home--switch--languages switch" @click="toggleLang($event)">
+                    Lang
                 </div>
-                <div class="home--icons"></div>
-                <div class="home--switch">
-                    <div class="home--switch--languages switch" @click="toggleLang($event)">
-                        Lang
-                    </div>
-                    <div class="home--switch--themes switch">
-                        Theme
-                    </div>
+                <div class="home--switch--themes switch" @click="toggleTheme($event)">
+                    Theme
                 </div>
-            </section>
-            <section id="about-me" class="about-me">
-                <div class="about-me--title title">
-                    <h1 x-text="language.sectionOne"></h1>
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
+            <div class="about-me--title title">
+                <h1 x-text="language.sectionOne"></h1>
+            </div>
+            <div class="about-me--content">
+                <div class="about-me--text">
+                    <p x-text="language.textSectionOne"></p>
                 </div>
-                <div class="about-me--text"></div>
-                <div class="about-me--image"></div>
-            </section>
-            <section id="hobbies" class="hobbies">
-                <div class="hobbies--title title">
-                    <h1 x-text="language.sectionTwo"></h1>
+                <div class="about-me--image">
+                    <img class="about-me--profile-image" src="./assets/images/profile_cut.jpeg" alt="">
                 </div>
-                <div class="hobbies--list"></div>
-                <div class="hobbies--images"></div>
-            </section>
-            <section id="skills" class="skills">
-                <div class="skills--title title">
-                    <h1 x-text="language.sectionThree"></h1>
-                </div>
-                <div class="skills--programming-languages">
-                    <div class="skills--programming-languages--main"></div>
-                    <div class="skills--programming-languages--besides"></div>
-                </div>
-                <div class="skills--devops"></div>
-                <div class="skills--more"></div>
-            </section>
-            <section id="past-works" class="past-works">
-                <div class="past-works--title title">
-                    <h1 x-text="language.sectionFour"></h1>
-                </div>
-                <div class="past-works--text"></div>
-            </section>
-            <section id="private-projects" class="private-projects">
-                <div class="private-projects--title title">
-                    <h1 x-text="language.sectionFive"></h1>
-                </div>
-                <div class="private-projects--list"></div>
-                <div class="private-projects--image"></div>
-            </section>
-        </main>
-        <footer></footer>
-    </div>
-    <script type="module" src="./src/main.js"></script>
+            </div>
+        </section>
+        <section id="hobbies" class="hobbies">
+            <div class="hobbies--title title">
+                <h1 x-text="language.sectionTwo"></h1>
+            </div>
+            <div class="hobbies--list">
+                <p x-text="language.textSectionTwo"></p>
+            </div>
+            <div class="hobbies--images"></div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="skills--title title">
+                <h1 x-text="language.sectionThree"></h1>
+            </div>
+            <div class="skills--programming-languages">
+                <div class="skills--programming-languages--main"></div>
+                <div class="skills--programming-languages--besides"></div>
+            </div>
+            <div class="skills--devops"></div>
+            <div class="skills--more"></div>
+        </section>
+        <section id="past-works" class="past-works">
+            <div class="past-works--title title">
+                <h1 x-text="language.sectionFour"></h1>
+            </div>
+            <div class="past-works--text"></div>
+        </section>
+        <section id="private-projects" class="private-projects">
+            <div class="private-projects--title title">
+                <h1 x-text="language.sectionFive"></h1>
+            </div>
+            <div class="private-projects--list"></div>
+            <div class="private-projects--image"></div>
+        </section>
+    </main>
+    <footer></footer>
+</div>
+<script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
