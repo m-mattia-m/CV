@@ -29,7 +29,11 @@
   },
   {
     "name": "text-section-3",
-    "value": ["Programming languages:", ["Main", ["Go", "Java", "JS / TS"]], ["Besides", ["Python", "PHP", "C", "C++", "C# (.NET)"]], "Devops", ["Openshift", "Gitlab / (Github)", "Docker"], "More", ["Angular", "Zitadel", "Plausible", "Wordpress"]]
+    "value": [
+      ["Programming Languages", ["Main", ["Go", "Java", "JS / TS"], "Besides", ["Python", "PHP", "C", "C++", "C# (.NET)"]]],
+      ["DevOps", ["Openshift", "Gitlab / (Github)", "Docker"]],
+      ["More", ["Angular", "Zitadel", "Plausible", "Wordpress"]]
+    ]
   },
   {
     "name": "text-section-4",

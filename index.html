@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8"/>
@@ -21,15 +21,18 @@
                 <span class="home--title--text">Mattia Müggler</span>
             </div>
             <div class="home--icons">
-                <i class="fa-brands fa-github icon"></i>
-                <i class="fa-brands fa-linkedin icon"></i>
+                <a href="https://github.com/m-mattia-m/" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+                <a href="https://www.linkedin.com/in/mattia-m%C3%BCggler/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a>
             </div>
             <div class="home--switch">
-                <div class="home--switch--languages switch" @click="toggleLang($event)">
-                    Lang
+                <div class="home--switch--languages switch" @click="toggleLang($event)" :class="language.chosenLanguage === 'de' ? 'switch--right' : 'switch--left'">
+                    <span class="home--switch--languages--text home--switch--text" x-text="language.chosenLanguage"></span>
+                    <div class="home--switch--languages--sign home--switch--element">池</div>
                 </div>
-                <div class="home--switch--themes switch" @click="toggleTheme($event)">
-                    Theme
+                <div class="home--switch--themes switch" @click="toggleTheme($event)" :class="chosenTheme === 'dark' ? 'switch--left' : 'switch--right'">
+<!--                    <span class="home&#45;&#45;switch&#45;&#45;theme&#45;&#45;text home&#45;&#45;switch&#45;&#45;text" x-text="chosenTheme"></span>-->
+                    <span class="home--switch--theme--text home--switch--text"></span>
+                    <div class="home--switch--theme--sign home--switch--element"><i class="fa-solid" :class="chosenTheme === 'dark' ? 'fa-moon' : 'fa-sun'"></i></div>
                 </div>
             </div>
         </section>
@@ -51,36 +54,90 @@
                 <h1 x-text="language.sectionTwo"></h1>
             </div>
             <div class="hobbies--list">
-                <p x-text="language.textSectionTwo"></p>
+                <ul class="hobbies--list--container list--container">
+                    <template x-for="element in language.textSectionTwo">
+                        <li class="hobbies--list--element list--element"><span x-text="element">Element</span></li>
+                    </template>
+                </ul>
             </div>
-            <div class="hobbies--images"></div>
+            <div class="hobbies--images">
+                <img class="hobbies--snowboarding-image" src="./assets/images/snowboarding.jpg" alt="">
+            </div>
         </section>
         <section id="skills" class="skills">
             <div class="skills--title title">
                 <h1 x-text="language.sectionThree"></h1>
             </div>
             <div class="skills--programming-languages">
-                <div class="skills--programming-languages--main"></div>
-                <div class="skills--programming-languages--besides"></div>
+                <h2 x-text="language.textSectionThree[0][0]"></h2>
+                <div class="skills--programming-languages--main">
+                    <h3 class="margin--left--small" x-text="language.textSectionThree[0][1][0]"></h3>
+                    <ul class="list--container">
+                        <template x-for="element in language.textSectionThree[0][1][1]">
+                            <li class="list--element list--element--space-before-bullet"><span x-text="element"></span></li>
+                        </template>
+                    </ul>
+                </div>
+                <div class="skills--programming-languages--besides">
+                    <h3 class="margin--left--small margin--top--small" x-text="language.textSectionThree[0][1][2]"></h3>
+                    <ul class="list--container">
+                        <template x-for="element in language.textSectionThree[0][1][3]">
+                            <li class="list--element list--element--space-before-bullet"><span x-text="element"></span></li>
+                        </template>
+                    </ul>
+                </div>
             </div>
-            <div class="skills--devops"></div>
-            <div class="skills--more"></div>
+            <div class="skills--devops">
+                <h2 class="margin--top--small" x-text="language.textSectionThree[1][0]"></h2>
+                <ul class="list--container">
+                    <template x-for="element in language.textSectionThree[1][1]">
+                        <li class="list--element list--element--space-before-bullet"><span x-text="element"></span></li>
+                    </template>
+                </ul>
+            </div>
+            <div class="skills--more">
+                <h2 class="margin--top--small" x-text="language.textSectionThree[2][0]"></h2>
+                <ul class="list--container">
+                    <template x-for="element in language.textSectionThree[2][1]">
+                        <li class="list--element list--element--space-before-bullet"><span x-text="element"></span></li>
+                    </template>
+                </ul>
+            </div>
         </section>
         <section id="past-works" class="past-works">
             <div class="past-works--title title">
                 <h1 x-text="language.sectionFour"></h1>
             </div>
-            <div class="past-works--text"></div>
+            <div class="past-works--text">
+                <p x-text="language.textSectionFour"></p>
+            </div>
         </section>
         <section id="private-projects" class="private-projects">
             <div class="private-projects--title title">
                 <h1 x-text="language.sectionFive"></h1>
             </div>
-            <div class="private-projects--list"></div>
+            <div class="private-projects--list">
+                <ul class="list--container">
+                    <template x-for="element in language.textSectionFive">
+                        <li class="list--element margin--top--small"><span class="text--hyphens" x-text="element"></span></li>
+
+                    </template>
+                </ul>
+            </div>
             <div class="private-projects--image"></div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer--text">
+            <a href="mailto:mattia@mattiamueggler.ch">mattia@mattiamueggler.ch</a>
+        </div>
+        <div class="footer--text">
+            <a href="tel:+41795054828">+41 79 505 48 28</a>
+        </div>
+        <div class="footer--text">
+            <p>© Copyright <span x-text="currentYear"></span> | Mattia Müggler</p>
+        </div>
+    </footer>
 </div>
 <script type="module" src="./src/main.js"></script>
 </body>

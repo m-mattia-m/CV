@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['./index.html'],
-    darkMode: 'media',
+    // darkMode: ['class', '[data-mode="dark"]'],
+    darkMode: 'class',
     theme: {
         fontFamily: {
             // sans: ['IBM Plex Sans', 'sans-serif'],
@@ -37,7 +38,6 @@ module.exports = {
             transitionDelay: {
                 primary: "200ms",
             }
-
         },
     },
     plugins: [],

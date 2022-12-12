@@ -18,5 +18,29 @@
   {
     "name": "title-section-5",
     "value": "Private Projekte"
+  },
+  {
+    "name": "text-section-1",
+    "value": "Hi, mein name ist Mattia Müggler. Ich bin 19 Jahre alt und befinde mich aktuell im 4. Lehrjahr meiner Ausbildung, welche ich bei Raiffesen Schweiz absolviere. Ich lebe zusammen mit meiner Familie in Zuzwil. "
+  },
+  {
+    "name": "text-section-2",
+    "value": ["Snowboarden", "Private Projekte Entwickeln", "Etwas mit Freunden unternehmen", "Jugendparlament St. Gallen"]
+  },
+  {
+    "name": "text-section-3",
+    "value": [
+      ["Programmiersprachen", ["Main", ["Go", "Java", "JS / TS"], "Besides", ["Python", "PHP", "C", "C++", "C# (.NET)"]]],
+      ["DevOps", ["Openshift", "Gitlab / (Github)", "Docker"]],
+      ["Mehr", ["Angular", "Zitadel", "Plausible", "Wordpress"]]
+    ]
+  },
+  {
+    "name": "text-section-4",
+    "value": "Meine Gruppe bietet eine Self-Service-Plattform an, bei der sich die Entwickler ein eigenes Projekt anlegen können. Man kann darauf Openshift-Namespaces, Gitlab-Gruppen/-Projekte und Artifactory-Repositories erstellen. Weiter konnte man die Mitarbeiter aus der Gruppe auf die verschiedenen Projekte berechtigen und bestehende Projekte anpassen und z.B. ein Openshift Namespace die Quota resizen. Dies wurde für die externe Entwicklungsumgebung sowie die interne Umgebung entwickelt. Das Backend wurde mit Go und einer Microservice-Architektur gelöst und das Frontend mit Angular."
+  },
+  {
+    "name": "text-section-5",
+    "value": ["Bookspread: Ist eine Plattform für Autoren, auf der sie nach Verlage suchen und filtern können. Sie können sehen, welcher Verlag welche Genres verlegt und zu ihnen passen könnte. Weiter können sie die Verlage ihrer Liste hinzufügen und dann direkt über die Plattform alle benötigten Unterlagen einsenden. Das intelligente Einsendungformular prüft, was von den Verlagen alles benötigt wird und sendet die richtigen Unterlagen dem Verlag, der diese fordert. Mit dieser Plattform haben wir beim Liechtensteinischen Jugendprojektwettbewerb gewonnen und haben uns dadurch für den interregionalen (St. Gallen, Liechtenstein, Vorarlberg) Jugendprojektwettbewerb qualifiziert, welchen wir auch gewonnen haben.", "CRM: Für den Partner meiner Mutter habe ich ein Customer Relation Management System (CRM) entwickelt und auf seine Bedürfnisse angepasst. Das Ziel war eine Plattform zu erstellen, in der er und seine Mitarbeiterin Kunden erfassen können und Rapport zu einem Kunden ablegen können, damit sie sehen, wann, was abgemacht wurde.", "Möbilo: Bevor wir Bookspread entwickelten, haben wir Möbilo angefangen zu entwickeln und damit auch erste Funktionen fertiggestellt. Mit dem Tool wollten wir Schreinereien ein Online-Tool zur Verfügung stellen, damit ihre Kunden online ein Produkt zusammenstellen können und es direkt auch eine Offerte generiert wird. Nachdem wir aber mit mehreren Schreinerfirmen gesprochen haben, kamen wir zum Schluss, dass kein wirkliches Interesse da ist, dass sich der Aufwand lohnen würde."]
   }
 ]

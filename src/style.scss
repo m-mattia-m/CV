@@ -13,69 +13,136 @@ $margin-space: 32;
     src: url("../assets/fonts/IBM-3270/3270-Regular.woff") format('woff');
 }
 
-body,
-.body {
+body {
     @apply h-full;
     @apply w-full;
     @apply text-center;
     @apply uppercase;
     //@apply font-sans;
     font-family: "IBM 3270";
+
+    @apply bg-light;
+    @apply dark:bg-dark;
+    @apply dark:text-light;
 }
 
-main,
-.main {
+main {
     @apply h-full;
     @apply w-full;
 }
 
-h1,
-.h1 {
-    @apply text-4xl;
+h1 {
+    @apply text-6xl;
     @apply mb-3;
+
+    @apply dark:text-light;
+
+    @screen md {
+        @apply text-8xl;
+    }
 }
 
-h2,
-.h2 {
-    @apply text-3xl;
-    @apply mb-3;
-}
-
-h3,
-.h3 {
+h2 {
     @apply text-2xl;
-    @apply mb-2;
+    @apply mb-3;
+    @apply text-left;
+
+    @apply dark:text-light;
+
+    @screen md {
+        @apply text-8xl;
+    }
+}
+
+h3 {
+    @apply text-xl;
+    @apply mb-3;
+    @apply text-left;
+
+    @apply dark:text-light;
+
+    @screen md {
+        @apply text-8xl;
+    }
 }
 
 p {
     @apply mb-1;
+    @apply text-justify;
+    @apply inline-block;
+}
+
+.text--hyphens {
+    @apply text-justify;
+    @apply inline-block;
 }
 
 section {
     @apply h-screen;
     @apply w-screen;
+    @apply px-mobile;
+
+    @screen md {
+        @apply px-tablet;
+    }
+    @screen lg {
+        @apply px-site-default;
+    }
+}
+
+section:first-child {
+    @apply mx-0;
+}
+
+section:last-child {
+    @apply h-full;
 }
 
 .home {
-    @apply bg-secondary;
-    @apply flex;
-    @apply items-center;
-    @apply justify-center;
+    @apply bg-primary;
     @apply text-light;
     @apply flex-col;
+    @apply flex;
 }
 
 .title {
     @apply text-left;
-    @apply mx-mobile;
     @apply my-mobile;
     @apply text-6xl;
+
+    @screen md {
+        @apply text-8xl;
+    }
 }
 
 .home--title {
+    @apply h-1/2;
     @apply text-center;
+    @apply flex;
+    @apply items-end;
+    @apply justify-center;
     @apply mx-0;
     @apply my-0;
+}
+
+.home--title--text {
+    @apply text-center;
+    @apply flex;
+    @apply items-center;
+    @apply justify-end;
+}
+
+.home--icons {
+    @apply pt-16;
+}
+
+.icon {
+    @apply text-5xl;
+    @apply px-6;
+
+    @screen md {
+        @apply text-7xl;
+    }
 }
 
 .switch {
@@ -85,12 +152,150 @@ section {
     @apply bottom-mobile;
     @apply absolute;
     @apply text-secondary;
+    @apply dark:text-primary;
+    @apply bg-light;
+    @apply dark:bg-secondary;
+    @apply flex;
+    @apply flex-row;
 }
 
 .home--switch--languages {
     @apply left-mobile;
+
+    //@screen md {
+    //    @apply left-tablet;
+    //}
+    //@screen lg {
+    //    @apply left-site-default;
+    //}
+}
+
+.home--switch--element {
+    @apply w-9;
+    @apply h-10;
+    @apply bg-primary;
+    @apply text-light;
+    @apply dark:text-secondary;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply mt-1;
+}
+
+.home--switch--text {
+    @apply w-9;
+    @apply h-10;
+    @apply mt-1;
+    @apply ml-1;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+}
+
+.home--switch--languages--sign {
+
+}
+
+.home--switch--languages--text {
+
+}
+
+.home--switch--themes--sign {
+
+}
+
+.home--switch--themes--text {
+
 }
 
 .home--switch--themes {
     @apply right-mobile;
+
+    @screen md {
+        @apply right-tablet;
+    }
+    @screen lg {
+        @apply right-site-default;
+    }
+}
+
+.switch--right {
+    @apply flex-row-reverse;
+}
+
+.switch--left {
+    @apply flex-row;
+}
+
+.about-me--content {
+    @apply flex;
+    @apply flex-col;
+
+    @screen md{
+        @apply flex-row-reverse;
+    }
+}
+
+.about-me--profile-image {
+    @apply w-full;
+    @apply object-cover;
+    @apply mt-mobile;
+}
+
+.hobbies--list--container {
+    @apply text-left;
+    @apply list-disc;
+}
+
+.list--container {
+    @apply text-left;
+    @apply list-disc;
+}
+
+.list--element {
+    @apply list-item;
+    @apply list-["◻"];
+    @apply list-inside;
+}
+
+.list--element > span {
+    @apply relative;
+    @apply left-8;
+}
+
+.list--element--space-before-bullet{
+    @apply ml-8;
+}
+
+.margin--left--small {
+    @apply ml-4;
+}
+
+.margin--top--small {
+    @apply mt-4;
+}
+
+.hobbies--snowboarding-image {
+    @apply w-full;
+    @apply object-cover;
+    @apply mt-mobile;
+}
+
+.text--hyphens {
+    @apply block;
+}
+
+footer {
+    @apply bottom-0;
+    @apply bg-primary;
+    @apply mt-mobile;
+}
+
+.footer--text {
+    @apply py-4;
+    @apply text-light;
+}
+
+.hide {
+    @apply hidden;
 }
