@@ -277,6 +277,15 @@ section:last-child {
     }
 }
 
+.hobbies--content {
+    @apply flex;
+    @apply flex-row;
+}
+
+.hobbies--content > * {
+    @apply w-1/2;
+}
+
 .hobbies--list--container {
     @apply text-left;
     @apply list-disc;
