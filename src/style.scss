@@ -93,6 +93,8 @@ p {
     @apply inline-block;
 }
 
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts
 main {
     @apply h-screen;
     @apply overflow-y-scroll;
