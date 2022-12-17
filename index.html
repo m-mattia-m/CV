@@ -16,7 +16,7 @@
 <div id="app" x-cloak x-data="homeComponent">
     <header>
     </header>
-    <main>
+    <main @scroll="scrollSnap($event)" id="main">
         <section id="home" class="home">
             <div class="home--title title">
                 <h1 class="home--title--text">Mattia Müggler</h1>

@@ -53,14 +53,7 @@ window.homeComponent = () => {
         toggleWebTheme();
     });
 
-    window.addEventListener('scroll', function(e){
 
-        console.log({
-            pageYOffset: window.scrollY,
-            scrollTop: document.documentElement.scrollTop,
-            clientTop: document.documentElement.clientTop
-        });
-    });
 
     return {
         /**
@@ -121,6 +114,10 @@ window.homeComponent = () => {
          * @type number
          */
         currentYear: new Date().getFullYear(),
+        /**
+         * @type number
+         */
+        scrollSnapPosition: 0,
 
         /**
          * setText
@@ -160,6 +157,20 @@ window.homeComponent = () => {
             console.log("theme clicked")
             toggleWebTheme();
             this.chosenTheme = chosenWebTheme;
+        },
+        scrollSnap($event){
+            let scrollPosition = document.getElementById("main").scrollTop
+            if (this.scrollSnapPosition >= scrollPosition){
+                const scrollToTop = () => {
+                    const c = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (c > 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, c - c / 500);
+                    }
+                };
+                scrollToTop();
+            }
+            this.scrollSnapPosition = scrollPosition
         },
     };
 };
