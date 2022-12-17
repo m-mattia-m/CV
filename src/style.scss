@@ -264,7 +264,9 @@ section:last-child {
 }
 
 .about-me--content > * {
-    @apply w-1/2;
+    @screen md {
+        @apply w-1/2;
+    }
 }
 
 .about-me--text {
@@ -285,12 +287,18 @@ section:last-child {
 }
 
 .hobbies--content {
-    @apply flex;
-    @apply flex-row;
+    @screen md {
+        @apply flex;
+        @apply flex-row;
+    }
 }
 
 .hobbies--content > * {
-    @apply w-1/2;
+    @apply w-full;
+
+    @screen md {
+        @apply w-1/2;
+    }
 }
 
 .hobbies--list--container {
