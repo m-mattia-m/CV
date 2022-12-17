@@ -53,6 +53,15 @@ window.homeComponent = () => {
         toggleWebTheme();
     });
 
+    window.addEventListener('scroll', function(e){
+
+        console.log({
+            pageYOffset: window.scrollY,
+            scrollTop: document.documentElement.scrollTop,
+            clientTop: document.documentElement.clientTop
+        });
+    });
+
     return {
         /**
          * @type string
