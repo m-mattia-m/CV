@@ -250,6 +250,19 @@ section:last-child {
 
     @screen md{
         @apply flex-row-reverse;
+        @apply w-full;
+        @apply h-4/5;
+        @apply items-center;
+    }
+}
+
+.about-me--content > * {
+    @apply w-1/2;
+}
+
+.about-me--text {
+    @screen md {
+        @apply w-11/12
     }
 }
 
@@ -260,6 +273,7 @@ section:last-child {
 
     @screen md {
         @apply mt-0;
+        @apply w-11/12
     }
 }
 
