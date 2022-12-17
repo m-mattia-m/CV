@@ -24,16 +24,19 @@ module.exports = {
                 "site-default": '10rem',
                 "tablet": '6rem',
                 "mobile": '1.5rem',
+                "spacing": '2rem',
             },
             padding: {
                 "site-default": '10rem',
                 "tablet": '6rem',
                 "mobile": '1.5rem',
+                "spacing": '2rem',
             },
             spacing: {
                 "site-default": '10rem',
                 "tablet": '6rem',
                 "mobile": '1.5rem',
+                "spacing": '2rem',
             },
             transitionDelay: {
                 primary: "200ms",

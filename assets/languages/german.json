@@ -21,7 +21,7 @@
   },
   {
     "name": "text-section-1",
-    "value": "Hi, mein name ist Mattia Müggler. Ich bin 19 Jahre alt und befinde mich aktuell im 4. Lehrjahr meiner Ausbildung, welche ich bei Raiffesen Schweiz absolviere. Ich lebe zusammen mit meiner Familie in Zuzwil. "
+    "value": "Hi, mein name ist Mattia Müggler. Ich bin 19 Jahre alt und befinde mich aktuell im 4. Lehrjahr meiner Ausbildung, welche ich bei Raiffeisen Schweiz absolviere. Ich lebe zusammen mit meiner Familie in Zuzwil. In meiner Freizeit entwickle ich gerne an Privaten Projekten, was später noch genauer beschrieben wird. Am liebsten Entwickle ich mit GO ein Backend, jedoch kann ich auch mit Angular und Plain-HTML Frontends entwickeln."
   },
   {
     "name": "text-section-2",
@@ -57,17 +57,17 @@
       {
         "title": "Bookspread: ",
         "value": "Ist eine Plattform für Autoren, auf der sie nach Verlage suchen und filtern können. Sie können sehen, welcher Verlag welche Genres verlegt und zu ihnen passen könnte. Weiter können sie die Verlage ihrer Liste hinzufügen und dann direkt über die Plattform alle benötigten Unterlagen einsenden. Das intelligente Einsendungformular prüft, was von den Verlagen alles benötigt wird und sendet die richtigen Unterlagen dem Verlag, der diese fordert. Mit dieser Plattform haben wir beim Liechtensteinischen Jugendprojektwettbewerb gewonnen und haben uns dadurch für den interregionalen (St. Gallen, Liechtenstein, Vorarlberg) Jugendprojektwettbewerb qualifiziert, welchen wir auch gewonnen haben.",
-        "url": "./assets/images/bookspread.png"
+        "image": "./assets/images/bookspread.png"
       },
       {
         "title": "CRM: ",
         "value": "Für den Partner meiner Mutter habe ich ein Customer Relation Management System (CRM) entwickelt und auf seine Bedürfnisse angepasst. Das Ziel war eine Plattform zu erstellen, in der er und seine Mitarbeiterin Kunden erfassen können und Rapport zu einem Kunden ablegen können, damit sie sehen, wann, was abgemacht wurde. Als Identity Management habe ich Zitadel eingebunden, welche ich auf einem eigenen Server gehosted habe, da ich es gerne selbst aufsetzen wollte und es bei der Cloud-Version die Free-Version gewesen wäre.",
-        "url": "./assets/images/bookspread.png"
+        "image": "./assets/images/bookspread.png"
       },
       {
         "title": "Möbilo: ",
         "value": "Bevor wir Bookspread entwickelten, haben wir Möbilo angefangen zu entwickeln und damit auch erste Funktionen fertiggestellt. Mit dem Tool wollten wir Schreinereien ein Online-Tool zur Verfügung stellen, damit ihre Kunden online ein Produkt zusammenstellen können und es direkt auch eine Offerte generiert wird. Nachdem wir aber mit mehreren Schreinerfirmen gesprochen haben, kamen wir zum Schluss, dass kein wirkliches Interesse da ist, dass sich der Aufwand lohnen würde.",
-        "url": "./assets/images/bookspread.png"
+        "image": "./assets/images/bookspread.png"
       }
     ]
   }
