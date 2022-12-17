@@ -30,9 +30,21 @@
   {
     "name": "text-section-3",
     "value": [
-      ["Programming Languages", ["Main", ["Go", "Java", "JS / TS"], "Besides", ["Python", "PHP", "C", "C++", "C# (.NET)"]]],
-      ["DevOps", ["Openshift", "Gitlab / (Github)", "Docker"]],
-      ["More", ["Angular", "Zitadel", "Plausible", "Wordpress"]]
+      {
+        "title": "Programming Languages",
+        "value": [
+          {"title":  "Main", "value":  ["Go", "Java", "JS / TS"]},
+          {"title":  "Besides", "value":  ["Python", "PHP", "C", "C++", "C# (.NET)"]}
+        ]
+      },
+      {
+        "title": "DevOps",
+        "value": ["Openshift", "Gitlab / (Github)", "Docker"]
+      },
+      {
+        "title": "More",
+        "value": ["Angular", "Zitadel", "Plausible", "Wordpress"]
+      }
     ]
   },
   {
@@ -41,6 +53,22 @@
   },
   {
     "name": "text-section-5",
-    "value": ["Bookspread: Is a platform for authors to search and filter for publishers. They can see which publisher publishes which genres and might suit them. Further, they can add the publishers to their list and then submit all the required documents directly through the platform. The intelligent submission form checks what all is needed from the publishers and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein Youth Project Competition and thus qualified for the interregional (St. Gallen, Liechtenstein, Vorarlberg) Youth Project Competition, which we also won.", "CRM: I developed a Customer Relation Management System (CRM) for my mother's partner and customized it to his needs. The goal was to create a platform where he and his employee can record customers and file rapports to a customer, so they can see when, what was agreed.", "Möbilo: Before we developed Bookspread, we started developing Möbilo and also completed the first functions with it. With the tool, we wanted to provide carpenters with an online tool so that their customers could put together a product online and a quote would be generated directly. But after talking to several carpentry companies, we came to the conclusion that there was no real interest, that the effort would be worthwhile."]
+    "value": [
+      {
+        "title": "Bookspread: ",
+        "value": "Is a platform for authors to search and filter for publishers. They can see which publisher publishes which genres and might suit them. Further, they can add the publishers to their list and then submit all the required documents directly through the platform. The intelligent submission form checks what all is needed from the publishers and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein Youth Project Competition and thus qualified for the interregional (St. Gallen, Liechtenstein, Vorarlberg) Youth Project Competition, which we also won.",
+        "url": "./assets/images/bookspread.png"
+      },
+      {
+        "title": "CRM: ",
+        "value": "I developed a Customer Relation Management System (CRM) for my mother's partner and customized it to his needs. The goal was to create a platform where he and his employee can record customers and file rapports to a customer, so they can see when, what was agreed. For identity management I included Zitadel, which I hosted on my own server because I liked to set it up myself and it would have been the free version with the cloud version.",
+        "url": "./assets/images/bookspread.png"
+      },
+      {
+        "title": "Möbilo: ",
+        "value": "Before we developed Bookspread, we started developing Möbilo and also completed the first functions with it. With the tool, we wanted to provide carpenters with an online tool so that their customers could put together a product online and a quote would be generated directly. But after talking to several carpentry companies, we came to the conclusion that there was no real interest, that the effort would be worthwhile.",
+        "url": "./assets/images/bookspread.png"
+      }
+    ]
   }
 ]

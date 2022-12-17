@@ -18,7 +18,7 @@
     <main>
         <section id="home" class="home">
             <div class="home--title title">
-                <span class="home--title--text">Mattia Müggler</span>
+                <h1 class="home--title--text">Mattia Müggler</h1>
             </div>
             <div class="home--icons">
                 <a href="https://github.com/m-mattia-m/" target="_blank"><i class="fa-brands fa-github icon"></i></a>
@@ -38,7 +38,7 @@
         </section>
         <section id="about-me" class="about-me">
             <div class="about-me--title title">
-                <h1 x-text="language.sectionOne"></h1>
+                <h2 x-text="language.sectionOne"></h2>
             </div>
             <div class="about-me--content">
                 <div class="about-me--text">
@@ -51,7 +51,7 @@
         </section>
         <section id="hobbies" class="hobbies">
             <div class="hobbies--title title">
-                <h1 x-text="language.sectionTwo"></h1>
+                <h2 x-text="language.sectionTwo"></h2>
             </div>
             <div class="hobbies--list">
                 <ul class="hobbies--list--container list--container">
@@ -66,39 +66,39 @@
         </section>
         <section id="skills" class="skills">
             <div class="skills--title title">
-                <h1 x-text="language.sectionThree"></h1>
+                <h2 x-text="language.sectionThree"></h2>
             </div>
             <div class="skills--programming-languages">
-                <h2 x-text="language.textSectionThree[0][0]"></h2>
+                <h3 x-text="language.textSectionThree[0].title"></h3>
                 <div class="skills--programming-languages--main">
-                    <h3 class="margin--left--small" x-text="language.textSectionThree[0][1][0]"></h3>
+                    <h4 class="margin--left--small" x-text="language.textSectionThree[0].value[0].title"></h4>
                     <ul class="list--container">
-                        <template x-for="element in language.textSectionThree[0][1][1]">
+                        <template x-for="element in language.textSectionThree[0].value[0].value">
                             <li class="list--element list--element--space-before-bullet"><span x-text="element"></span></li>
                         </template>
                     </ul>
                 </div>
                 <div class="skills--programming-languages--besides">
-                    <h3 class="margin--left--small margin--top--small" x-text="language.textSectionThree[0][1][2]"></h3>
+                    <h4 class="margin--left--small margin--top--small" x-text="language.textSectionThree[0].value[1].title"></h4>
                     <ul class="list--container">
-                        <template x-for="element in language.textSectionThree[0][1][3]">
+                        <template x-for="element in language.textSectionThree[0].value[1].value">
                             <li class="list--element list--element--space-before-bullet"><span x-text="element"></span></li>
                         </template>
                     </ul>
                 </div>
             </div>
             <div class="skills--devops">
-                <h2 class="margin--top--small" x-text="language.textSectionThree[1][0]"></h2>
+                <h3 class="margin--top--small" x-text="language.textSectionThree[1].title"></h3>
                 <ul class="list--container">
-                    <template x-for="element in language.textSectionThree[1][1]">
+                    <template x-for="element in language.textSectionThree[1].value">
                         <li class="list--element list--element--space-before-bullet"><span x-text="element"></span></li>
                     </template>
                 </ul>
             </div>
             <div class="skills--more">
-                <h2 class="margin--top--small" x-text="language.textSectionThree[2][0]"></h2>
+                <h3 class="margin--top--small" x-text="language.textSectionThree[2].title"></h3>
                 <ul class="list--container">
-                    <template x-for="element in language.textSectionThree[2][1]">
+                    <template x-for="element in language.textSectionThree[2].value">
                         <li class="list--element list--element--space-before-bullet"><span x-text="element"></span></li>
                     </template>
                 </ul>
@@ -106,7 +106,7 @@
         </section>
         <section id="past-works" class="past-works">
             <div class="past-works--title title">
-                <h1 x-text="language.sectionFour"></h1>
+                <h2 x-text="language.sectionFour"></h2>
             </div>
             <div class="past-works--text">
                 <p x-text="language.textSectionFour"></p>
@@ -114,17 +114,19 @@
         </section>
         <section id="private-projects" class="private-projects">
             <div class="private-projects--title title">
-                <h1 x-text="language.sectionFive"></h1>
+                <h2 x-text="language.sectionFive"></h2>
             </div>
             <div class="private-projects--list">
-                <ul class="list--container">
-                    <template x-for="element in language.textSectionFive">
-                        <li class="list--element margin--top--small"><span class="text--hyphens" x-text="element"></span></li>
-
-                    </template>
-                </ul>
+                <template x-for="element in language.textSectionFive">
+                    <div>
+                        <h3 x-text="element.title"></h3>
+                        <p x-text="element.value"></p>
+                        <div class="private-projects--image">
+                            <img :src="element.url" alt="bookspread">
+                        </div>
+                    </div>
+                </template>
             </div>
-            <div class="private-projects--image"></div>
         </section>
     </main>
     <footer>

@@ -13,6 +13,10 @@ $margin-space: 32;
     src: url("../assets/fonts/IBM-3270/3270-Regular.woff") format('woff');
 }
 
+html {
+    @apply w-screen;
+}
+
 body {
     @apply h-full;
     @apply w-full;
@@ -32,7 +36,7 @@ main {
 }
 
 h1 {
-    @apply text-6xl;
+    @apply text-7xl;
     @apply mb-3;
 
     @apply dark:text-light;
@@ -43,26 +47,38 @@ h1 {
 }
 
 h2 {
-    @apply text-2xl;
-    @apply mb-3;
+    @apply text-5xl;
+    @apply my-3;
     @apply text-left;
 
     @apply dark:text-light;
 
     @screen md {
-        @apply text-8xl;
+        @apply text-6xl;
     }
 }
 
 h3 {
-    @apply text-xl;
-    @apply mb-3;
+    @apply text-2xl;
+    @apply my-3;
     @apply text-left;
 
     @apply dark:text-light;
 
     @screen md {
-        @apply text-8xl;
+        @apply text-4xl;
+    }
+}
+
+h4 {
+    @apply text-lg;
+    @apply my-3;
+    @apply text-left;
+
+    @apply dark:text-light;
+
+    @screen md {
+        @apply text-xl;
     }
 }
 
@@ -99,6 +115,7 @@ section:last-child {
 }
 
 .home {
+    @apply w-screen;
     @apply bg-primary;
     @apply text-light;
     @apply flex-col;
@@ -200,23 +217,23 @@ section:last-child {
 
 }
 
+.home--switch--themes {
+    @apply right-mobile;
+
+    //@screen md {
+    //    @apply right-tablet;
+    //}
+    //@screen lg {
+    //    @apply right-site-default;
+    //}
+}
+
 .home--switch--themes--sign {
 
 }
 
 .home--switch--themes--text {
 
-}
-
-.home--switch--themes {
-    @apply right-mobile;
-
-    @screen md {
-        @apply right-tablet;
-    }
-    @screen lg {
-        @apply right-site-default;
-    }
 }
 
 .switch--right {
@@ -240,6 +257,10 @@ section:last-child {
     @apply w-full;
     @apply object-cover;
     @apply mt-mobile;
+
+    @screen md {
+        @apply mt-0;
+    }
 }
 
 .hobbies--list--container {
@@ -281,8 +302,9 @@ section:last-child {
     @apply mt-mobile;
 }
 
-.text--hyphens {
-    @apply block;
+.private-projects--image {
+    @apply mt-4;
+    @apply mb-10;
 }
 
 footer {
