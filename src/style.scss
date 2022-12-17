@@ -325,6 +325,21 @@ section:last-child {
     @apply mt-mobile;
 }
 
+.skills--content {
+    @screen md {
+        @apply flex;
+        @apply flex-row;
+    }
+}
+
+.skills--content > * {
+    @screen md {
+        @apply w-1/3;
+    }
+}
+
+
+
 .private-projects--image {
     @apply mt-4;
     @apply mb-10;
