@@ -162,10 +162,10 @@ window.homeComponent = () => {
             let scrollPosition = document.getElementById("main").scrollTop
             if (this.scrollSnapPosition >= scrollPosition){
                 const scrollToTop = () => {
-                    const c = document.documentElement.scrollTop || document.body.scrollTop;
-                    if (c > 0) {
+                    const topElement = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (topElement > 0) {
                         window.requestAnimationFrame(scrollToTop);
-                        window.scrollTo(0, c - c / 500);
+                        window.scrollTo(0, topElement - topElement / 500);
                     }
                 };
                 scrollToTop();
