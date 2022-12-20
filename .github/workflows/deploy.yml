@@ -8,9 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set env variables
-        FULLPAGEJS_TOKEN: ${{ env.github-pages.FULLPAGEJS_TOKEN }}
-        run: echo "ENV-FULLPAGE.JS-Token ${{ env.github-pages.FULLPAGEJS_TOKEN }}"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Node.js
@@ -37,6 +34,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      secrets: ${{ steps.deployment.outputs.FULLPAGEJS_TOKEN }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
