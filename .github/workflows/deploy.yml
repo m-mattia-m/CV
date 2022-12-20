@@ -34,6 +34,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
       FULLPAGEJS_TOKEN: ${{ secrets.FULLPAGEJS_TOKEN }}
     steps:
       - name: Deploy to GitHub Pages
