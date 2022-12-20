@@ -1,58 +1,176 @@
 import { getSectionCordinates, scrollTo } from "../helpers/scroll";
+import { setGerman, setEnglish } from "../helpers/language.js";
 
 window.homeComponent = () => {
+    /**
+     * @type string
+     */
+    let chosenWebTheme = "";
+    /**
+     * @type string
+     */
+    let chosenLanguage = "en";
+    /**
+     * returnLanguage
+     * @return string
+     */
+    function returnLanguage(jsonPath){
+        console.log("lang: " + chosenLanguage)
+        if (chosenLanguage == "en") {
+            return setEnglish(jsonPath);
+        }
+        if (chosenLanguage == "de") {
+            return setGerman(jsonPath);
+        }
+        return "";
+    };
+    function toggleWebTheme(){
+        // if (localStorage.theme === 'dark' || window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+        if (localStorage.theme === 'dark'){
+            document.documentElement.classList.remove('dark')
+            localStorage.theme = 'light';
+            chosenWebTheme = 'light';
+            console.log("light")
+        } else {
+            document.documentElement.classList.add('dark')
+            localStorage.theme = 'dark';
+            chosenWebTheme = 'dark';
+            console.log("dark")
+        }
+    }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        localStorage.theme = 'dark';
+        chosenWebTheme = 'dark';
+        document.documentElement.classList.add('dark');
+    } else {
+        localStorage.theme = 'light';
+        chosenWebTheme = 'light';
+        document.documentElement.classList.remove('dark');
+    };
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        localStorage.theme = event.matches ? "dark" : "light";
+        console.log("system theme has changed")
+        toggleWebTheme();
+    });
+
+
+
     return {
         /**
-         * onReadMoreClick
-         * @param {MouseEvent} $event
-         * @param {HTMLElement} section
-         * @param {HTMLElement} header
+         * @type string
          */
-        onReadMoreClick($event, section, header) {
-            const sectionCordinates = getSectionCordinates(section);
-            const headerHeight = header.clientHeight;
-            const padding = 30;
-
+        chosenTheme: chosenWebTheme,
+        language: {
             /**
-             * @type ScrollToOptions
+             * @type string
              */
-            const scrollToOptions = {
-                left: 0,
-                top: sectionCordinates.top - headerHeight - padding,
-            };
-
-            scrollTo(scrollToOptions);
+            chosenLanguage: "en",
+            /**
+             * @type string
+             */
+            sectionOne: returnLanguage("title-section-1"),
+            /**
+             * @type string
+             */
+            sectionTwo: returnLanguage("title-section-2"),
+            /**
+             * @type string
+             */
+            sectionThree: returnLanguage("title-section-3"),
+            /**
+             * @type string
+             */
+            sectionFour: returnLanguage("title-section-4"),
+            /**
+             * @type string
+             */
+            sectionFive: returnLanguage("title-section-5"),
+            /**
+             * @type string
+             */
+            sectionSix: returnLanguage("title-section-6"),
+            /**
+             * @type string
+             */
+            textSectionOne: returnLanguage("text-section-1"),
+            /**
+             * @type string
+             */
+            textSectionTwo: returnLanguage("text-section-2"),
+            /**
+             * @type string
+             */
+            textSectionThree: returnLanguage("text-section-3"),
+            /**
+             * @type string
+             */
+            textSectionFour: returnLanguage("text-section-4"),
+            /**
+             * @type string
+             */
+            textSectionFive: returnLanguage("text-section-5"),
         },
         /**
-         * onLogoClick
-         * @param {MouseEvent} $event
+         * @type number
          */
-        onLogoClick($event) {
-            scrollTo({
-                left: 0,
-                top: 0,
-            });
+        currentYear: new Date().getFullYear(),
+        /**
+         * @type number
+         */
+        scrollSnapPosition: 0,
+
+        /**
+         * setText
+         * */
+        setText(){
+            this.language.sectionOne = returnLanguage("title-section-1");
+            this.language.sectionTwo = returnLanguage("title-section-2");
+            this.language.sectionThree = returnLanguage("title-section-3");
+            this.language.sectionFour = returnLanguage("title-section-4");
+            this.language.sectionFive = returnLanguage("title-section-5");
+            this.language.sectionSix = returnLanguage("title-section-6");
+            this.language.textSectionOne = returnLanguage("text-section-1"),
+            this.language.textSectionTwo = returnLanguage("text-section-2"),
+            this.language.textSectionThree = returnLanguage("text-section-3"),
+            this.language.textSectionFour = returnLanguage("text-section-4"),
+            this.language.textSectionFive = returnLanguage("text-section-5")
         },
         /**
-         * onNavLinkClick
+         * toggleLang
          * @param {MouseEvent} $event
-         * @param {HTMLElement} section
-         * @param {HTMLElement} header
          */
-        onNavLinkClick($event, section, header) {
-            const sectionCordinates = getSectionCordinates(section);
-            const headerHeight = header.clientHeight;
-            const padding = 30;
-
-            /**
-             * @type ScrollToOptions
-             */
-            const scrollToOptions = {
-                left: 0,
-                top: sectionCordinates.top - headerHeight - padding,
-            };
-
-            scrollTo(scrollToOptions);
+        toggleLang($event){
+            if (chosenLanguage == "de"){
+                chosenLanguage = "en";
+                this.language.chosenLanguage = "en";
+            } else if (chosenLanguage == "en"){
+                chosenLanguage = "de";
+                this.language.chosenLanguage = "de";
+            }
+            this.setText();
+        },
+        /**
+         * toggleTheme
+         * @param {MouseEvent} $event
+         * */
+        toggleTheme($event) {
+            console.log("theme clicked")
+            toggleWebTheme();
+            this.chosenTheme = chosenWebTheme;
+        },
+        scrollSnap($event){
+            let scrollPosition = document.getElementById("main").scrollTop
+            if (this.scrollSnapPosition >= scrollPosition){
+                const scrollToTop = () => {
+                    const topElement = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (topElement > 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, topElement - topElement / 500);
+                    }
+                };
+                scrollToTop();
+            }
+            this.scrollSnapPosition = scrollPosition
         },
     };
 };
