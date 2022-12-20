@@ -1,4 +1,5 @@
 import Alpine from 'alpinejs';
+import fullpage from 'fullpage.js';
 
 // styles
 import './style.scss';
@@ -12,3 +13,9 @@ const initApp = () => {
 };
 
 initApp();
+
+new fullpage('#fullpage', {
+    licenseKey: 'FULLPAGEJS_TOKEN',
+    autoScrolling:true,
+    scrollHorizontally: false
+});

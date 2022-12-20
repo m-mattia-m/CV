@@ -32,12 +32,7 @@ body {
 
 main {
     @apply w-full;
-    @apply h-screen;
-    @apply overflow-y-scroll;
-    @apply snap-mandatory;
-    @apply snap-y;
-    @apply scroll-p-5;
-    @apply scroll-smooth;
+    @apply h-full;
 }
 
 h1 {
@@ -102,8 +97,6 @@ section {
     @apply h-screen;
     @apply w-screen;
     @apply px-mobile;
-
-    @apply snap-start;
 
     @screen md {
         @apply px-tablet;
@@ -354,8 +347,6 @@ section:last-child {
 }
 
 .private-projects--list-element--content {
-    @apply snap-start;
-
     @screen md {
         @apply flex;
         @apply flex-row;
