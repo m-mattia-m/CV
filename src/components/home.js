@@ -1,4 +1,4 @@
-import { getSectionCordinates, scrollTo } from "../helpers/scroll";
+import { getSectionCoordinates, scrollTo } from "../helpers/scroll";
 import { setGerman, setEnglish } from "../helpers/language.js";
 
 window.homeComponent = () => {
