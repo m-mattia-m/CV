@@ -69,7 +69,7 @@ addEventListener("scroll", (event) => {
           return
         }
         lastSwitch = sections[i].id
-        scrollTo({left: 0, top: getSectionCoordinates(sections[i])?.top - 1.4 * tailwindConfig.mMobile})
+        scrollTo({left: 0, top: getSectionCoordinates(sections[i])?.top - 1.2 * tailwindConfig.mMobile})
         break
       }
     }
