@@ -64,7 +64,11 @@ addEventListener("scroll", (event) => {
   const sections = document.querySelectorAll("section");
   for (let i = 0; i< sections.length; i++){
     if (scrollDirection === "down"){
-      if ((currentHeight) < getSectionCoordinates(sections[i])?.top ){
+      console.log("scroll Direction: down")
+      console.log("current Height: " + currentHeight)
+      console.log("screen height: " + window.innerHeight)
+      console.log("section coordinates: " + getSectionCoordinates(sections[i])?.top )
+      if ((currentHeight) < getSectionCoordinates(sections[i])?.top + tailwindConfig.mMobile ){
         if (lastSwitch === sections[i].id) {
           return
         }
@@ -74,12 +78,12 @@ addEventListener("scroll", (event) => {
       }
     }
     if (scrollDirection === "up"){
-      if ((currentHeight  - window.innerHeight / 1.25) < getSectionCoordinates(sections[i])?.top){
+      if ((currentHeight  - window.innerHeight / 1.5) < getSectionCoordinates(sections[i])?.top){
         if (lastSwitch === sections[i].id) {
           return
         }
         lastSwitch = sections[i].id
-        scrollTo({left: 0, top: getSectionCoordinates(sections[i])?.top - 0.5 * tailwindConfig.mMobile})
+        scrollTo({left: 0, top: getSectionCoordinates(sections[i])?.top - 1 * tailwindConfig.mMobile})
         break
       }
     }
