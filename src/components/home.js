@@ -140,9 +140,11 @@ window.homeComponent = () => {
             if (chosenLanguage == "de"){
                 chosenLanguage = "en";
                 this.language.chosenLanguage = "en";
+                document.getElementById("html").setAttribute("lang", "en");
             } else if (chosenLanguage == "en"){
                 chosenLanguage = "de";
                 this.language.chosenLanguage = "de";
+                document.getElementById("html").setAttribute("lang", "de");
             }
             this.setText();
         },

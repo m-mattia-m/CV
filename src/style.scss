@@ -15,6 +15,9 @@ $margin-space: 32;
 
 html {
     @apply w-screen;
+
+    @apply hyphens-auto;
+
 }
 
 body {
