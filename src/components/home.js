@@ -1,4 +1,4 @@
-import { getSectionCordinates, scrollTo } from "../helpers/scroll";
+import { getSectionCoordinates, scrollTo } from "../helpers/scroll";
 import { setGerman, setEnglish } from "../helpers/language.js";
 
 window.homeComponent = () => {
@@ -114,10 +114,7 @@ window.homeComponent = () => {
          * @type number
          */
         currentYear: new Date().getFullYear(),
-        /**
-         * @type number
-         */
-        scrollSnapPosition: 0,
+
 
         /**
          * setText
@@ -143,9 +140,11 @@ window.homeComponent = () => {
             if (chosenLanguage == "de"){
                 chosenLanguage = "en";
                 this.language.chosenLanguage = "en";
+                document.getElementById("html").setAttribute("lang", "en");
             } else if (chosenLanguage == "en"){
                 chosenLanguage = "de";
                 this.language.chosenLanguage = "de";
+                document.getElementById("html").setAttribute("lang", "de");
             }
             this.setText();
         },
@@ -157,20 +156,6 @@ window.homeComponent = () => {
             console.log("theme clicked")
             toggleWebTheme();
             this.chosenTheme = chosenWebTheme;
-        },
-        scrollSnap($event){
-            let scrollPosition = document.getElementById("main").scrollTop
-            if (this.scrollSnapPosition >= scrollPosition){
-                const scrollToTop = () => {
-                    const topElement = document.documentElement.scrollTop || document.body.scrollTop;
-                    if (topElement > 0) {
-                        window.requestAnimationFrame(scrollToTop);
-                        window.scrollTo(0, topElement - topElement / 500);
-                    }
-                };
-                scrollToTop();
-            }
-            this.scrollSnapPosition = scrollPosition
         },
     };
 };

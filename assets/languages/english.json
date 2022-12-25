@@ -49,7 +49,7 @@
   },
   {
     "name": "text-section-4",
-    "value": "My group offers a self-service platform where developers can create their own project. One can create Openshift namespaces, Gitlab groups/projects and Artifactory repositories on it. Further, one could authorize the collaborators from the group to the different projects and customize existing projects. for example, an Openshift namespace resize the quota. This was developed for the external development environment as well as the internal environment. The backend was solved with Go and a microservice architecture and the frontend with Angular."
+    "value": "My group offers a self-service platform where developers can create their own project. One can create Openshift namespaces, Gitlab groups/projects and Artifactory repositories on it. Further, one could authorize the collaborators from the group to the different projects and customize existing projects. for example, an Openshift namespace resize the quota. This was developed for the external development environment as well as the internal environment. The backend was solved with Go and a microservice architecture and the frontend with Angular. The external development environment is hosted in Azure and the other for internal development is hosted internally. For the external variant, Azure AD was used for user management. Internally, the SaaS product from Airlock was used for user authentication."
   },
   {
     "name": "text-section-5",
