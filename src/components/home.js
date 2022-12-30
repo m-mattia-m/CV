@@ -1,9 +1,5 @@
 import { setGerman, setEnglish } from "../helpers/language.js";
-
-// assets
-import bookspread from '/assets/images/bookspread.png';
-import crm from '/assets/images/crm.png';
-import moebilo from '/assets/images/moebilo.png';
+import {getImageUrl} from "../helpers/images.js";
 
 window.homeComponent = () => {
     /**
@@ -64,9 +60,6 @@ window.homeComponent = () => {
         console.log("system theme has changed")
         toggleWebTheme();
     });
-    function getImageUrl(name) {
-        return new URL(`../../assets/images/${name}`, import.meta.url).href
-    }
 
     return {
         /**
@@ -167,16 +160,10 @@ window.homeComponent = () => {
             this.chosenTheme = chosenWebTheme;
         },
         async setImagesPath() {
-            if (this.language.textSectionFive === undefined) {
-                return;
-            }
-            console.log("this.language.textSectionFive")
             setTimeout(() => {
-                console.log(this.language.textSectionFive)
                 for (let i = 0; i < this.language.textSectionFive.length; i++) {
                     const element = document.getElementById("private-projects--image--" + this.language.textSectionFive[i].id)
                     element.setAttribute("src", getImageUrl(this.language.textSectionFive[i].imageName))
-                    console.log(this.language.textSectionFive[i].imageName)
                 }
             }, 0);
         },
