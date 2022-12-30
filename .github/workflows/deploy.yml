@@ -7,8 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      FULLPAGEJS_TOKEN: ${{ secrets.FULLPAGEJS_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
