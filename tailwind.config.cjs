@@ -1,14 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['./index.html'],
-    // darkMode: ['class', '[data-mode="dark"]'],
     darkMode: 'class',
     theme: {
         fontFamily: {
-            // sans: ['IBM Plex Sans', 'sans-serif'],
-            // serif: ['IBM Plex Serif', 'serif'],
-            // mono: ['IBM Plex Mono', 'monospace'],
-            // sans: ['IBM-3270', import("./assets/fonts/IBM-3270/3270-Regular.woff")],
             sans: ['IBM-3270', 'IBM 3270'],
         },
         extend: {

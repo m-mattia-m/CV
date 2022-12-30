@@ -24,8 +24,11 @@ window.homeComponent = () => {
         }
         return "";
     };
+    /**
+     * toggleWebTheme
+     * @return null
+     */
     function toggleWebTheme(){
-        // if (localStorage.theme === 'dark' || window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
         if (localStorage.theme === 'dark'){
             document.documentElement.classList.remove('dark')
             localStorage.theme = 'light';
@@ -52,8 +55,6 @@ window.homeComponent = () => {
         console.log("system theme has changed")
         toggleWebTheme();
     });
-
-
 
     return {
         /**
@@ -114,8 +115,6 @@ window.homeComponent = () => {
          * @type number
          */
         currentYear: new Date().getFullYear(),
-
-
         /**
          * setText
          * */

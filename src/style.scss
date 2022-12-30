@@ -22,7 +22,6 @@ body {
     @apply w-full;
     @apply text-center;
     @apply uppercase;
-    //@apply font-sans;
     font-family: "IBM 3270";
 
     @apply bg-light;
@@ -178,13 +177,6 @@ section:last-child {
 
 .home--switch--languages {
     @apply left-mobile;
-
-    //@screen md {
-    //    @apply left-tablet;
-    //}
-    //@screen lg {
-    //    @apply left-site-default;
-    //}
 }
 
 .home--switch--element {
@@ -219,13 +211,6 @@ section:last-child {
 
 .home--switch--themes {
     @apply right-mobile;
-
-    //@screen md {
-    //    @apply right-tablet;
-    //}
-    //@screen lg {
-    //    @apply right-site-default;
-    //}
 }
 
 .home--switch--themes--sign {
@@ -351,9 +336,6 @@ section:last-child {
     @apply object-cover;
     @apply mt-mobile;
     @apply h-64;
-
-    //height: 300px;
-
 }
 
 .skills--content {
