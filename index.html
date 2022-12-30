@@ -133,18 +133,18 @@
             </div>
             </div>
         </section>
-        <section id="private-projects" class="section private-projects">
+        <section id="private-projects" class="section private-projects" x-init="setImagesPath()">
             <div class="private-projects--title title">
                 <h2 x-text="language.sectionFive"></h2>
             </div>
             <div class="private-projects--list">
-                <template x-for="element in language.textSectionFive">
+                <template x-for="element in language.textSectionFive" :key="element.id">
                     <div>
                         <h3 x-text="element.title"></h3>
                         <div class="private-projects--list-element--content">
                             <p x-text="element.value" class="private-projects--text"></p>
                             <div class="private-projects--image--container">
-                                <img :src="element.image" :alt="element.title" class="private-projects--image">
+                                <img :src="element.path" :alt="element.title" :id="'private-projects--image--' + element.id" class="private-projects--image">
                             </div>
                         </div>
                     </div>

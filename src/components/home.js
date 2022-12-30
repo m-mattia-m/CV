@@ -1,5 +1,9 @@
-import { getSectionCordinates, scrollTo } from "../helpers/scroll";
 import { setGerman, setEnglish } from "../helpers/language.js";
+
+// assets
+import bookspread from '/assets/images/bookspread.png';
+import crm from '/assets/images/crm.png';
+import moebilo from '/assets/images/moebilo.png';
 
 window.homeComponent = () => {
     /**
@@ -26,7 +30,6 @@ window.homeComponent = () => {
     };
     /**
      * toggleWebTheme
-     * @return null
      */
     function toggleWebTheme(){
         if (localStorage.theme === 'dark'){
@@ -41,20 +44,29 @@ window.homeComponent = () => {
             console.log("dark")
         }
     }
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        localStorage.theme = 'dark';
-        chosenWebTheme = 'dark';
-        document.documentElement.classList.add('dark');
-    } else {
-        localStorage.theme = 'light';
-        chosenWebTheme = 'light';
-        document.documentElement.classList.remove('dark');
-    };
+    /**
+     * setDefaultTheme
+     */
+    function setDefaultTheme(){
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            localStorage.theme = 'dark';
+            chosenWebTheme = 'dark';
+            document.documentElement.classList.add('dark');
+        } else {
+            localStorage.theme = 'light';
+            chosenWebTheme = 'light';
+            document.documentElement.classList.remove('dark');
+        };
+    }
+    setDefaultTheme()
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
         localStorage.theme = event.matches ? "dark" : "light";
         console.log("system theme has changed")
         toggleWebTheme();
     });
+    function getImageUrl(name) {
+        return new URL(`../../assets/images/${name}`, import.meta.url).href
+    }
 
     return {
         /**
@@ -153,6 +165,20 @@ window.homeComponent = () => {
             console.log("theme clicked")
             toggleWebTheme();
             this.chosenTheme = chosenWebTheme;
+        },
+        async setImagesPath() {
+            if (this.language.textSectionFive === undefined) {
+                return;
+            }
+            console.log("this.language.textSectionFive")
+            setTimeout(() => {
+                console.log(this.language.textSectionFive)
+                for (let i = 0; i < this.language.textSectionFive.length; i++) {
+                    const element = document.getElementById("private-projects--image--" + this.language.textSectionFive[i].id)
+                    element.setAttribute("src", getImageUrl(this.language.textSectionFive[i].imageName))
+                    console.log(this.language.textSectionFive[i].imageName)
+                }
+            }, 0);
         },
     };
 };
