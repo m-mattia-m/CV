@@ -57,17 +57,20 @@
       {
         "title": "Bookspread: ",
         "value": "Is a platform for authors to search and filter for publishers. They can see which publisher publishes which genres and might suit them. Further, they can add the publishers to their list and then submit all the required documents directly through the platform. The intelligent submission form checks what all is needed from the publishers and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein Youth Project Competition and thus qualified for the interregional (St. Gallen, Liechtenstein, Vorarlberg) Youth Project Competition, which we also won.",
-        "image": "./assets/images/bookspread.png"
+        "image": "./assets/images/bookspread.png",
+        "id": "bookspread"
       },
       {
         "title": "CRM: ",
         "value": "I developed a Customer Relation Management System (CRM) for my mother's partner and customized it to his needs. The goal was to create a platform where he and his employee can record customers and file rapports to a customer, so they can see when, what was agreed. For identity management I included Zitadel, which I hosted on my own server because I liked to set it up myself and it would have been the free version with the cloud version.",
-        "image": "./assets/images/crm.png"
+        "image": "./assets/images/crm.png",
+        "id": "crm"
       },
       {
         "title": "Möbilo: ",
         "value": "Before we developed Bookspread, we started developing Möbilo and also completed the first functions with it. With the tool, we wanted to provide carpenters with an online tool so that their customers could put together a product online and a quote would be generated directly. But after talking to several carpentry companies, we came to the conclusion that there was no real interest, that the effort would be worthwhile. (Here I had no more screenshot, so I included this image).",
-        "image": "./assets/images/moebilo.png"
+        "image": "./assets/images/moebilo.png",
+        "id": "moebilo"
       }
     ]
   }
