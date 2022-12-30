@@ -16,7 +16,7 @@
 <div id="app" x-cloak x-data="homeComponent">
     <header>
     </header>
-    <main @scroll="scrollSnap($event)" id="fullpage">
+    <main>
         <section id="home active" class="section home">
             <div class="home--title title">
                 <h1 class="home--title--text">Mattia Müggler</h1>
@@ -52,7 +52,7 @@
                     <p x-text="language.textSectionOne"></p>
                 </div>
                 <div class="about-me--image">
-                    <img class="about-me--profile-image" src="./assets/images/profile_cut.jpeg" alt="">
+                    <img class="about-me--profile-image" src="./assets/images/profile_cut.jpeg" alt="Mattia Müggler">
                 </div>
             </div>
         </section>
@@ -69,7 +69,8 @@
                     </ul>
                 </div>
                 <div class="hobbies--images">
-                    <img class="hobbies--snowboarding-image" src="./assets/images/snowboarding.jpg" alt="">
+                    <img class="hobbies--snowboarding-image" src="./assets/images/snowboarding.jpg" alt="snowboarding">
+                    <img class="hobbies--jupa-image" src="./assets/images/St-Gallen-Ratssaal.jpeg" alt="jupa">
                 </div>
             </div>
         </section>
@@ -126,8 +127,10 @@
             <div class="past-works--title title">
                 <h2 x-text="language.sectionFour"></h2>
             </div>
-            <div class="past-works--text">
+            <div class="past-works--content">
+                <div class="past-works--text">
                 <p x-text="language.textSectionFour"></p>
+            </div>
             </div>
         </section>
         <section id="private-projects" class="section private-projects">

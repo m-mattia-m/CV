@@ -1,11 +1,12 @@
 import Alpine from 'alpinejs';
-import fullpage from 'fullpage.js';
 
 // styles
 import './style.scss';
 
 // assets
-import imageUrl from '/assets/images/bookspread.png'
+import bookspread from '/assets/images/bookspread.png';
+import crm from '/assets/images/crm.png';
+import moebilo from '/assets/images/moebilo.png';
 
 const initApp = () => {
     window.Alpine = Alpine;
@@ -13,11 +14,3 @@ const initApp = () => {
 };
 
 initApp();
-
-console.log("FULLPAGEJS_TOKEN-2: " + process.env.FULLPAGEJS_TOKEN)
-
-new fullpage('#fullpage', {
-    licenseKey: 'FULLPAGEJS_TOKEN',
-    autoScrolling:true,
-    scrollHorizontally: false
-});

@@ -1,5 +1,5 @@
 {
-    "name": "eportfolio",
+    "name": "CV",
     "private": true,
     "version": "0.0.0",
     "author": "m-mattia-m",
@@ -21,7 +21,5 @@
         "tailwindcss": "^3.1.8",
         "vite": "^3.1.0"
     },
-    "dependencies": {
-        "fullpage.js": "^4.0.15"
-    }
+    "dependencies": {}
 }
