@@ -15,11 +15,14 @@ $margin-space: 32;
 
 html {
     @apply w-screen;
+
+    @apply hyphens-auto;
+
 }
 
 body {
     @apply h-full;
-    @apply w-full;
+    @apply w-screen;
     @apply text-center;
     @apply uppercase;
     font-family: "IBM 3270";

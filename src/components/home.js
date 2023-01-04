@@ -144,9 +144,11 @@ window.homeComponent = () => {
             if (chosenLanguage == "de"){
                 chosenLanguage = "en";
                 this.language.chosenLanguage = "en";
+                document.getElementById("html").setAttribute("lang", "en");
             } else if (chosenLanguage == "en"){
                 chosenLanguage = "de";
                 this.language.chosenLanguage = "de";
+                document.getElementById("html").setAttribute("lang", "de");
             }
             this.setText();
         },
@@ -158,14 +160,6 @@ window.homeComponent = () => {
             console.log("theme clicked")
             toggleWebTheme();
             this.chosenTheme = chosenWebTheme;
-        },
-        async setImagesPath() {
-            setTimeout(() => {
-                for (let i = 0; i < this.language.textSectionFive.length; i++) {
-                    const element = document.getElementById("private-projects--image--" + this.language.textSectionFive[i].id)
-                    element.setAttribute("src", getImageUrl(this.language.textSectionFive[i].imageName))
-                }
-            }, 0);
         },
     };
 };
