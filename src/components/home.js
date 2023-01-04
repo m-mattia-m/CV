@@ -123,7 +123,7 @@ window.homeComponent = () => {
         /**
          * setText
          * */
-        setText(){
+        setText() {
             this.language.sectionOne = returnLanguage("title-section-1");
             this.language.sectionTwo = returnLanguage("title-section-2");
             this.language.sectionThree = returnLanguage("title-section-3");
@@ -131,21 +131,21 @@ window.homeComponent = () => {
             this.language.sectionFive = returnLanguage("title-section-5");
             this.language.sectionSix = returnLanguage("title-section-6");
             this.language.textSectionOne = returnLanguage("text-section-1"),
-            this.language.textSectionTwo = returnLanguage("text-section-2"),
-            this.language.textSectionThree = returnLanguage("text-section-3"),
-            this.language.textSectionFour = returnLanguage("text-section-4"),
-            this.language.textSectionFive = returnLanguage("text-section-5")
+                this.language.textSectionTwo = returnLanguage("text-section-2"),
+                this.language.textSectionThree = returnLanguage("text-section-3"),
+                this.language.textSectionFour = returnLanguage("text-section-4"),
+                this.language.textSectionFive = returnLanguage("text-section-5")
         },
         /**
          * toggleLang
          * @param {MouseEvent} $event
          */
-        toggleLang($event){
-            if (chosenLanguage == "de"){
+        toggleLang($event) {
+            if (chosenLanguage == "de") {
                 chosenLanguage = "en";
                 this.language.chosenLanguage = "en";
                 document.getElementById("html").setAttribute("lang", "en");
-            } else if (chosenLanguage == "en"){
+            } else if (chosenLanguage == "en") {
                 chosenLanguage = "de";
                 this.language.chosenLanguage = "de";
                 document.getElementById("html").setAttribute("lang", "de");
@@ -161,5 +161,19 @@ window.homeComponent = () => {
             toggleWebTheme();
             this.chosenTheme = chosenWebTheme;
         },
-    };
+        async setImagesPath() {
+            if (this.language.textSectionFive === undefined) {
+                return;
+            }
+            console.log("this.language.textSectionFive")
+            setTimeout(() => {
+                console.log(this.language.textSectionFive)
+                for (let i = 0; i < this.language.textSectionFive.length; i++) {
+                    const element = document.getElementById("private-projects--image--" + this.language.textSectionFive[i].id)
+                    element.setAttribute("src", getImageUrl(this.language.textSectionFive[i].imageName))
+                    console.log(this.language.textSectionFive[i].imageName)
+                }
+            }, 0);
+        }
+    }
 };
