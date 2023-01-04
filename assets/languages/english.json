@@ -17,11 +17,11 @@
   },
   {
     "name": "title-section-5",
-    "value": "Private Projects"
+    "value": "Private projects"
   },
   {
     "name": "text-section-1",
-    "value": "Hi, my name is Mattia Müggler. I'm 19 years old and I'm currently in the 4th year of my apprenticeship at Raiffeisen Switzerland. I live together with my family in Zuzwil. In my free time I like to develop on private projects, which will be described in more detail later. I prefer to develop a backend with GO, but I can also develop frontends with Angular and plain HTML."
+    "value": "Hi, my name is Mattia Müggler. I'm 19 years old, and I'm currently in the 4th year of my apprenticeship at Raiffeisen Switzerland. I live together with my family in Zuzwil. In my free time, I like to develop private projects, which will be described in more detail later. I prefer to develop a backend with GO, but I can also develop frontends with Angular and plain HTML."
   },
   {
     "name": "text-section-2",
@@ -39,35 +39,41 @@
       },
       {
         "title": "DevOps",
-        "value": ["Openshift", "Gitlab / (Github)", "Docker"]
+        "value": ["OpenShift", "GitLab / (GitHub)", "Docker"]
       },
       {
         "title": "More",
-        "value": ["Angular", "Zitadel", "Plausible", "Wordpress"]
+        "value": ["Angular", "SQL", "MongoDB", "Zitadel", "Plausible", "WordPress"]
       }
     ]
   },
   {
     "name": "text-section-4",
-    "value": "My group offers a self-service platform where developers can create their own project. One can create Openshift namespaces, Gitlab groups/projects and Artifactory repositories on it. Further, one could authorize the collaborators from the group to the different projects and customize existing projects. for example, an Openshift namespace resize the quota. This was developed for the external development environment as well as the internal environment. The backend was solved with Go and a microservice architecture and the frontend with Angular. The external development environment is hosted in Azure and the other for internal development is hosted internally. For the external variant, Azure AD was used for user management. Internally, the SaaS product from Airlock was used for user authentication."
+    "value": "My group offers a self-service platform where developers can create their own projects. One can create OpenShift namespaces, GitLab groups/projects, and Artifactory repositories on it. Further, one could authorize the collaborators from the group to the different projects and customize existing projects. For example, an OpenShift namespace resizes the quota. This was developed for the external development environment as well as the internal environment. The backend was solved with Go and microservice architecture, and the frontend with Angular."
   },
   {
     "name": "text-section-5",
     "value": [
       {
         "title": "Bookspread: ",
-        "value": "Is a platform for authors to search and filter for publishers. They can see which publisher publishes which genres and might suit them. Further, they can add the publishers to their list and then submit all the required documents directly through the platform. The intelligent submission form checks what all is needed from the publishers and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein Youth Project Competition and thus qualified for the interregional (St. Gallen, Liechtenstein, Vorarlberg) Youth Project Competition, which we also won.",
-        "image": "./assets/images/bookspread.png"
+        "value": "Is a platform for authors to search and filter for publishers. They can see which publisher publishes which genres and might suit them. Further, they can add the publishers to their list and then submit all the required documents directly through the platform. The intelligent submission form checks what is needed from the publishers and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein Youth Project Competition and thus qualified for the interregional (St. Gallen, Liechtenstein, Vorarlberg) Youth Project Competition, which we also won.",
+        "path": "./assets/images/bookspread.png",
+        "imageName": "bookspread.png",
+        "id": "bookspread"
       },
       {
         "title": "CRM: ",
-        "value": "I developed a Customer Relation Management System (CRM) for my mother's partner and customized it to his needs. The goal was to create a platform where he and his employee can record customers and file rapports to a customer, so they can see when, what was agreed. For identity management I included Zitadel, which I hosted on my own server because I liked to set it up myself and it would have been the free version with the cloud version.",
-        "image": "./assets/images/bookspread.png"
+        "value": "I developed a Customer Relation Management System (CRM) for my mother's partner and customized it to his needs. The goal was to create a platform where he and his employee can record customers and file rapports to a customer, so they can see when what was agreed. For identity management, I included Zitadel, which I hosted on my server because I liked to set it up myself, and it would have been the free version with the cloud version.",
+        "path": "./assets/images/crm.png",
+        "imageName": "crm.png",
+        "id": "crm"
       },
       {
         "title": "Möbilo: ",
-        "value": "Before we developed Bookspread, we started developing Möbilo and also completed the first functions with it. With the tool, we wanted to provide carpenters with an online tool so that their customers could put together a product online and a quote would be generated directly. But after talking to several carpentry companies, we came to the conclusion that there was no real interest, that the effort would be worthwhile.",
-        "image": "./assets/images/bookspread.png"
+        "value": "Before we developed Bookspread, we started developing Möbilo and also completed the first functions with it. With the tool, we wanted to provide carpenters with an online tool so that their customers could put together a product online and a quote would be generated directly. But after talking to several carpentry companies, we concluded that there was no real interest and that the effort would be worthwhile. (Here I had no more screenshots, so I included this image).",
+        "path": "./assets/images/moebilo.png",
+        "imageName": "moebilo.png",
+        "id": "moebilo"
       }
     ]
   }

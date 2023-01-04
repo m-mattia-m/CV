@@ -25,7 +25,6 @@ body {
     @apply w-screen;
     @apply text-center;
     @apply uppercase;
-    //@apply font-sans;
     font-family: "IBM 3270";
 
     @apply bg-light;
@@ -181,13 +180,6 @@ section:last-child {
 
 .home--switch--languages {
     @apply left-mobile;
-
-    //@screen md {
-    //    @apply left-tablet;
-    //}
-    //@screen lg {
-    //    @apply left-site-default;
-    //}
 }
 
 .home--switch--element {
@@ -222,13 +214,6 @@ section:last-child {
 
 .home--switch--themes {
     @apply right-mobile;
-
-    //@screen md {
-    //    @apply right-tablet;
-    //}
-    //@screen lg {
-    //    @apply right-site-default;
-    //}
 }
 
 .home--switch--themes--sign {
@@ -283,9 +268,17 @@ section:last-child {
 }
 
 .hobbies--content {
+
+    @apply flex;
+    @apply flex-col;
+
     @screen md {
         @apply flex;
         @apply flex-row;
+
+        @apply w-full;
+        @apply h-4/5;
+        @apply items-center;
     }
 }
 
@@ -334,18 +327,52 @@ section:last-child {
     @apply w-full;
     @apply object-cover;
     @apply mt-mobile;
+    @apply h-64;
+
+    @screen md {
+        @apply mt-0;
+    }
+}
+
+.hobbies--jupa-image {
+    @apply w-full;
+    @apply object-cover;
+    @apply mt-mobile;
+    @apply h-64;
 }
 
 .skills--content {
+    @apply flex;
+    @apply flex-col;
+
     @screen md {
         @apply flex;
         @apply flex-row;
+
+        @apply w-full;
+        @apply h-4/5;
+        @apply items-center;
     }
 }
 
 .skills--content > * {
     @screen md {
         @apply w-1/3;
+        @apply h-2/3;
+    }
+}
+
+.past-works--content {
+    @apply flex;
+    @apply flex-col;
+
+    @screen md {
+        @apply flex;
+        @apply flex-row;
+
+        @apply w-full;
+        @apply h-4/5;
+        @apply items-center;
     }
 }
 

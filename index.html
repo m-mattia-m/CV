@@ -17,7 +17,7 @@
     <header>
     </header>
     <main>
-        <section id="home" class="home">
+        <section id="home active" class="section home">
             <div class="home--title title">
                 <h1 class="home--title--text">Mattia Müggler</h1>
             </div>
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </section>
-        <section id="about-me" class="about-me">
+        <section id="about-me" class="section about-me">
             <div class="about-me--title title">
                 <h2 x-text="language.sectionOne"></h2>
             </div>
@@ -52,11 +52,11 @@
                     <p x-text="language.textSectionOne"></p>
                 </div>
                 <div class="about-me--image">
-                    <img class="about-me--profile-image" src="./assets/images/profile_cut.jpeg" alt="">
+                    <img class="about-me--profile-image" src="./assets/images/profile_cut.jpeg" alt="Mattia Müggler">
                 </div>
             </div>
         </section>
-        <section id="hobbies" class="hobbies">
+        <section id="hobbies" class="section hobbies">
             <div class="hobbies--title title">
                 <h2 x-text="language.sectionTwo"></h2>
             </div>
@@ -69,11 +69,12 @@
                     </ul>
                 </div>
                 <div class="hobbies--images">
-                    <img class="hobbies--snowboarding-image" src="./assets/images/snowboarding.jpg" alt="">
+                    <img class="hobbies--snowboarding-image" src="./assets/images/snowboarding.jpg" alt="snowboarding">
+                    <img class="hobbies--jupa-image" src="./assets/images/St-Gallen-Ratssaal.jpeg" alt="jupa">
                 </div>
             </div>
         </section>
-        <section id="skills" class="skills">
+        <section id="skills" class="section skills">
             <div class="skills--title title">
                 <h2 x-text="language.sectionThree"></h2>
             </div>
@@ -122,26 +123,28 @@
                 </div>
             </div>
         </section>
-        <section id="past-works" class="past-works">
+        <section id="past-works" class="section past-works">
             <div class="past-works--title title">
                 <h2 x-text="language.sectionFour"></h2>
             </div>
-            <div class="past-works--text">
+            <div class="past-works--content">
+                <div class="past-works--text">
                 <p x-text="language.textSectionFour"></p>
             </div>
+            </div>
         </section>
-        <section id="private-projects" class="private-projects">
+        <section id="private-projects" class="section private-projects" x-init="setImagesPath()">
             <div class="private-projects--title title">
                 <h2 x-text="language.sectionFive"></h2>
             </div>
             <div class="private-projects--list">
-                <template x-for="element in language.textSectionFive">
+                <template x-for="element in language.textSectionFive" :key="element.id">
                     <div>
                         <h3 x-text="element.title"></h3>
                         <div class="private-projects--list-element--content">
                             <p x-text="element.value" class="private-projects--text"></p>
                             <div class="private-projects--image--container">
-                                <img :src="element.image" alt="bookspread" class="private-projects--image">
+                                <img :src="element.path" :alt="element.title" :id="'private-projects--image--' + element.id" class="private-projects--image">
                             </div>
                         </div>
                     </div>
