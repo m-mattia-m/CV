@@ -15,14 +15,11 @@ $margin-space: 32;
 
 html {
     @apply w-screen;
-
-    @apply hyphens-auto;
-
 }
 
 body {
     @apply h-full;
-    @apply w-screen;
+    @apply w-full;
     @apply text-center;
     @apply uppercase;
     //@apply font-sans;
@@ -34,8 +31,8 @@ body {
 }
 
 main {
-    @apply w-full;
     @apply h-full;
+    @apply w-full;
 }
 
 h1 {
@@ -96,7 +93,17 @@ p {
     @apply inline-block;
 }
 
+main {
+    @apply h-screen;
+    @apply overflow-y-scroll;
+    scroll-snap-type: y mandatory;
+    //@apply snap-y;
+    //scroll-padding: 20px;
+    @apply scroll-p-5;
+}
+
 section {
+    @apply snap-start;
     @apply h-screen;
     @apply w-screen;
     @apply px-mobile;
@@ -115,6 +122,7 @@ section:first-child {
 
 section:last-child {
     @apply h-full;
+    height: calc(2.5 * 100%);
 }
 
 .home {
@@ -165,12 +173,24 @@ section:last-child {
     }
 }
 
+.home--switch {
+    @apply flex;
+    @apply flex-row;
+    @apply justify-between;
+    @apply mt-60;
+
+    @screen md {
+        @apply mt-48;
+    }
+}
+
 .switch {
+
+    //@apply absolute;
     @apply w-20;
     @apply h-12;
     @apply bg-light;
     @apply bottom-mobile;
-    @apply absolute;
     @apply text-secondary;
     @apply dark:text-primary;
     @apply bg-light;
@@ -182,12 +202,9 @@ section:last-child {
 .home--switch--languages {
     @apply left-mobile;
 
-    //@screen md {
-    //    @apply left-tablet;
-    //}
-    //@screen lg {
-    //    @apply left-site-default;
-    //}
+    @screen md {
+        @apply left-site-default;
+    }
 }
 
 .home--switch--element {
@@ -223,12 +240,9 @@ section:last-child {
 .home--switch--themes {
     @apply right-mobile;
 
-    //@screen md {
-    //    @apply right-tablet;
-    //}
-    //@screen lg {
-    //    @apply right-site-default;
-    //}
+    @screen md {
+        @apply right-site-default;
+    }
 }
 
 .home--switch--themes--sign {
@@ -247,6 +261,12 @@ section:last-child {
     @apply flex-row;
 }
 
+.about-me  {
+    @screen md {
+        @apply h-screen;
+    }
+}
+
 .about-me--content {
     @apply flex;
     @apply flex-col;
@@ -254,21 +274,30 @@ section:last-child {
     @screen md{
         @apply flex-row-reverse;
         @apply w-full;
-        @apply h-4/5;
+        height: calc(100% - 100px - 96px);
         @apply items-center;
     }
 }
 
 .about-me--content > * {
+    @apply w-full;
+
     @screen md {
         @apply w-1/2;
     }
 }
 
 .about-me--text {
+    @apply pl-0;
+
     @screen md {
-        @apply w-11/12
+        @apply pl-spacing;
     }
+}
+
+.about-me--image {
+    @apply flex;
+    @apply justify-center;
 }
 
 .about-me--profile-image {
@@ -278,22 +307,19 @@ section:last-child {
 
     @screen md {
         @apply mt-0;
-        @apply w-11/12
+        @apply w-full;
+    }
+    @screen lg {
+        @apply w-9/12;
     }
 }
 
 .hobbies--content {
+    @apply flex;
+    @apply flex-col;
+
     @screen md {
-        @apply flex;
         @apply flex-row;
-    }
-}
-
-.hobbies--content > * {
-    @apply w-full;
-
-    @screen md {
-        @apply w-1/2;
     }
 }
 
@@ -330,74 +356,33 @@ section:last-child {
     @apply mt-4;
 }
 
-.hobbies--snowboarding-image {
+.hobbies--content > * {
     @apply w-full;
-    @apply object-cover;
-    @apply mt-mobile;
-}
 
-.skills--content {
-    @screen md {
-        @apply flex;
-        @apply flex-row;
-    }
-}
-
-.skills--content > * {
-    @screen md {
-        @apply w-1/3;
-    }
-}
-
-.private-projects--list-element--content {
-    @screen md {
-        @apply flex;
-        @apply flex-row;
-    }
-}
-
-.private-projects--list-element--content > * {
     @screen md {
         @apply w-1/2;
     }
 }
 
-.private-projects--image--container {
-    @apply mt-4;
-    @apply mb-10;
+.hobbies--snowboarding-image {
+    @apply w-full;
+    @apply object-cover;
+    @apply mt-mobile;
 
     @screen md {
         @apply mt-0;
-        @apply mb-0;
-    }
-}
-
-.private-projects--text {
-    @screen md {
-        @apply pr-spacing;
     }
 }
 
 .private-projects--image {
-    @screen md {
-        @apply pl-spacing;
-    }
+    @apply mt-4;
+    @apply mb-10;
 }
 
 footer {
     @apply bottom-0;
     @apply bg-primary;
     @apply mt-mobile;
-
-    @screen md {
-        @apply flex;
-        @apply flex-row;
-        @apply justify-between;
-        @apply px-tablet;
-    }
-    @screen lg {
-        @apply px-site-default;
-    }
 }
 
 .footer--text {
