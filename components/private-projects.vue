@@ -9,7 +9,7 @@
       <div class="w-full flex flex-col py-8">
         <div v-for="project in $tm('privateProjects.content')" :key="project">
           <h2
-            class="text-3xl decoration-1 underline-offset-2 text-dark dark:text-light pt-12 pb-4"
+            class="text-3xl underline decoration-1 underline-offset-2 text-dark dark:text-light pt-12 pb-4"
           >
             <NuxtLink :to="project.href">{{ project.title }}</NuxtLink>
           </h2>

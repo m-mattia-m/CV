@@ -174,35 +174,35 @@ export default defineI18nConfig(() => ({
             title: "Notify (In Entwicklung und Planung)",
             description:
               "Notify ist ein einfaches, sicheres Nachrichten-Gateway, mit dem Sie Nachrichten von Ihrem Frontend aus versenden können. Verbinden Sie Slack oder Mailgun um Nachrichten zu versenden. Der Vorteil ist, dass Sie keinen API-Schlüssel im Frontend preisgeben müssen, da eine Host-Verifizierung verwendet wird. Im Notify-Backend können beliebig viele Workflows und Nachrichtenvorlagen hinzugefügt werden. Der Code ist Open Source und die erste Version wurde bereits veröffentlicht. Für die Zukunft ist geplant, vollständig verwaltete Instanzen (ähnlich wie bei Plausible) anzubieten. Derzeit wird es auf meinem privaten K8s-Cluster gehostet.",
-            imagePath: "/images/notify.jpeg",
+            imagePath: "~/images/notify.jpeg",
             href: "https://github.com/m-mattia-m/Notify",
           },
           {
             title: "Formtion (In Entwicklung und Vermarktung)",
             description:
               "Formtion erstellt automatisch ein Formular, das zu Ihrer Notion-Datenbank passt. Sie können auch Dateien zu externen Anbietern wie Google Drive, OneDrive oder Dropbox hochladen. Die erste Version ist öffentlich und hat bereits registrierte Nutzer. Sie befindet sich jedoch noch in der aktiven Entwicklung. Sie wird derzeit auf meinem privaten K8s-Cluster gehostet.",
-            imagePath: "/images/formtion.png",
+            imagePath: "~/images/formtion.png",
             href: "https://formtion.app",
           },
           {
             title: "Bookspread (in Vertrieb)",
             description:
               "Dies ist eine Plattform für Buchautoren, um nach Verlagen zu suchen und zu filtern. Sie können passende Verlage für ihre Genres finden. Außerdem können sie die Verlage zu ihrer Liste hinzufügen und dann alle erforderlichen Dokumente direkt über die Plattform einreichen. Das intelligente Einreichungsformular prüft die Anforderungen der Verlage und sendet die richtigen Dokumente an den gewünschten Verlag. Mit dieser Plattform haben wir den Liechtensteiner Jugendprojekte-Wettbewerb gewonnen und uns damit für den interregionalen (St. Gallen, Liechtenstein, Vorarlberg) Jugendprojekte-Wettbewerb qualifiziert, den wir ebenfalls gewonnen haben. Aktuell haben wir eine zweite Plattform für Verlage geschaffen, auf der Manuskripte mittels künstlicher Intelligenz analysiert werden. Geplant ist auch, den Einreichungsprozess und alles, was damit zusammenhängt, als SaaS grundlegend zu überarbeiten. Teilweise gehostet auf meinem privaten K8s-Cluster.",
-            imagePath: "/images/bookspread.png",
+            imagePath: "~/images/bookspread.png",
             href: "https://bookspread.io",
           },
           {
             title: "CRM (in benutzung)",
             description:
               "Ich habe für den Partner meiner Mutter ein Customer Relationship Management System (CRM) entwickelt und an seine Bedürfnisse angepasst. Das Ziel war es, eine Plattform zu entwickeln, auf der er und seine Mitarbeiter Kunden anlegen und Rapporte zu einem Kunden ablegen können, damit sie sehen können, wann was vereinbart wurde. Für das Identitätsmanagement habe ich Zitadel eingebunden. Zitadel habe ich auf meinem eigenen Server gehostet, weil ich es gerne selbst einrichte, und bei den Zitadel-Cloud-Lösungen handelte es sich um die kostenlose Version.",
-            imagePath: "/images/crm.png",
+            imagePath: "~/images/crm.png",
             href: "#",
           },
           {
             title: "Möbilo (aufgelöst)",
             description:
               "Bevor meine Freunde und ich Bookspread entwickelt haben, begannen wir mit der Entwicklung von Möbilo. Wir wollten Schreinern ein Online-Tool zur Verfügung stellen, damit ihre Kunden ein Produkt online zusammenstellen können. Auch ein Kostenvoranschlag würde im Verzeichnis erstellt werden. Aber nachdem wir mit mehreren Unternehmen gesprochen hatten, kamen wir zu dem Schluss, dass es kein wirkliches Interesse gab, dass sich der Aufwand lohnen würde.",
-            imagePath: "/images/moebilo.png",
+            imagePath: "~/images/moebilo.png",
             href: "#",
           },
         ],

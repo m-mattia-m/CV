@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="h-screen w-full flex items-center">
+  <div class="h-screen w-full flex items-center mt-28 lg:mt-0">
     <div>
       <h1 class="text-5xl text-dark dark:text-light pb-12">
         {{ $t("about.title") }}
