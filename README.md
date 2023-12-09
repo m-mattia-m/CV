@@ -2,6 +2,14 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Publish
+
+> Deploy it with `npm run generate`
+
+> and publish it with `npm run deploy`
+
+[Inspiration](https://github.com/lucpotage/nuxt-github-pages)
+
 ## Setup
 
 Make sure to install the dependencies:
