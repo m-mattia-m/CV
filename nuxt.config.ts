@@ -37,9 +37,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  routeRules: {
-    "/**": { ssr: true },
-  },
+  // routeRules: {
+  //   "/**": { ssr: true },
+  // },
   css: ["~/assets/css/main.css"],
   modules: [
     "@nuxtjs/i18n",
