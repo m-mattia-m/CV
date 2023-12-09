@@ -9,8 +9,8 @@ export default defineNuxtConfig({
         lang: "en",
       },
     },
-    baseURL: "/CV/", // baseURL: '/<repository>/'
-    buildAssetsDir: "assets", // don't use "_" at the begining of the folder name to avoids
+    baseURL: "/CV/",
+    buildAssetsDir: "assets",
   },
   vite: {
     esbuild: {
