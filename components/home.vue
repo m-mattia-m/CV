@@ -12,7 +12,7 @@ import Github from "~/public/icons/github.svg";
         >
           {{ $t("name") }}
         </h1>
-        <div class="flex flex-row w-4/12 justify-between mt-12">
+        <div class="flex flex-row w-36 justify-between mt-12">
           <NuxtLink
             class="cursor-pointer"
             target="_blank"
@@ -38,7 +38,7 @@ import Github from "~/public/icons/github.svg";
         </div>
       </div>
     </div>
-    <div class="h-2/6 flex items-end flex-row justify-between p-mobile md:p-tablet lg:p-desktop">
+    <div class="h-2/6 flex items-end flex-row justify-between p-4">
       <language />
       <darkmode />
     </div>

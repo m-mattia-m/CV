@@ -44,6 +44,7 @@ export default defineNuxtConfig({
     "nuxt-svgo",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
+    "vue3-carousel-nuxt",
   ],
   i18n: {
     vueI18n: "./i18n.config.ts",

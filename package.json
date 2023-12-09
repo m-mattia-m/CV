@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
-    "tailwindcss-hyphens": "^0.1.0"
+    "tailwindcss-hyphens": "^0.1.0",
+    "vue3-carousel-nuxt": "^1.1.0"
   }
 }

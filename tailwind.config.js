@@ -21,13 +21,15 @@ export default {
       },
       margin: {
         mobile: "3rem",
-        tablet: "2rem",
-        desktop: "1rem",
+        tablet: "6rem",
+        desktop: "12rem",
+        switch: "2rem",
       },
       padding: {
         mobile: "3rem",
-        tablet: "2rem",
-        desktop: "1rem",
+        tablet: "6rem",
+        desktop: "12rem",
+        switch: "2rem",
       },
       transitionDelay: {
         primary: "200ms",
