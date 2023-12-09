@@ -31,8 +31,8 @@ function invertLanguage() {
 <template>
   <div
     :class="[
-      { 'flex-row': language === 'en' },
-      { 'flex-row-reverse': language === 'de' },
+      { 'flex-row': language === 'de' },
+      { 'flex-row-reverse': language === 'en' },
     ]"
     class="h-12 w-[5.5rem] bg-light dark:bg-secondary flex cursor-pointer"
     @click="invertLanguage"
@@ -41,12 +41,12 @@ function invertLanguage() {
       class="h-10 w-10 bg-primary mt-1 ml-1 mr-1 flex justify-center items-center"
     >
       <p class="text-light dark:text-secondary">
-        {{ invertedLanguage.toUpperCase() }}
+        {{ language.toUpperCase() }}
       </p>
     </div>
     <div class="h-10 w-11 mt-1 flex justify-center items-center text-center">
       <p class="text-primary">
-        {{ language.toUpperCase() }}
+        {{ invertedLanguage.toUpperCase() }}
       </p>
     </div>
   </div>

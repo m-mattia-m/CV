@@ -6,11 +6,14 @@
       <h1 class="text-5xl text-dark dark:text-light pb-12">
         {{ $t("skills.title") }}
       </h1>
-      <div class="w-full flex md:flex-row justify-between items-start">
+      <div class="w-full flex flex-col md:flex-row justify-between items-start">
         <div class="w-full h-full flex flex-col justify-start items-start">
           <h2 class="text-3xl text-dark dark:text-light pt-2">
-            {{ $t("skills.content.programmingLanguages.main.title") }}
+            {{ $t("skills.content.programmingLanguages.title") }}
           </h2>
+          <h3 class="text-2xl text-dark dark:text-light pt-2">
+            {{ $t("skills.content.programmingLanguages.main.title") }}
+          </h3>
           <ul class="list-disc py-2">
             <li
               v-for="item in $tm(
@@ -24,9 +27,9 @@
               }}</span>
             </li>
           </ul>
-          <h2 class="text-3xl text-dark dark:text-light pt-2">
+          <h3 class="text-2xl text-dark dark:text-light pt-2">
             {{ $t("skills.content.programmingLanguages.besides.title") }}
-          </h2>
+          </h3>
           <ul class="list-disc py-2">
             <li
               v-for="item in $tm(
