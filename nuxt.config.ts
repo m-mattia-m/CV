@@ -9,7 +9,6 @@ export default defineNuxtConfig({
         lang: "en",
       },
     },
-    baseURL: "/CV/",
     buildAssetsDir: "assets",
   },
   vite: {
