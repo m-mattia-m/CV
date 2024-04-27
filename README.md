@@ -8,6 +8,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 > and publish it with `npm run deploy`
 
+> new have to add your custom domain after you published your changes -> repository - settings - page - domain (cv.mattiamueggler.ch)
+
 [Inspiration](https://github.com/lucpotage/nuxt-github-pages)
 
 ## Setup

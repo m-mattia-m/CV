@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="w-full h-12 bg-primary flex flex-row justify-between items-center"
+    class="w-full py-4 bg-primary flex flex-col md:flex-row justify-between items-center"
   >
     <NuxtLink class="text-light dark:text-dark" to="mailto:hi@mattiamueggler.ch"
       >hi@mattiamueggler.ch</NuxtLink

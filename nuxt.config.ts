@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   // routeRules: {
   //   "/**": { ssr: true },
   // },
-  css: ["~/assets/css/main.css"],
+  // css: ["~/assets/css/main.css"],
   modules: [
     "@nuxtjs/i18n",
     "nuxt-svgo",
