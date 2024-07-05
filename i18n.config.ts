@@ -7,15 +7,14 @@ export default defineI18nConfig(() => ({
       name: "Mattia Müggler",
       about: {
         title: "About me",
-        text: "Hi, my name is Mattia Müggler. I'm 20 years old and work as a software engineers at Raiffeisen Switzerland. My family and I live together in Zuzwil. In my free time I like to do some private coding-projects. This page will show you more details about them. I mostly prefer developing backends with Go, but I am also capable of developing backends with Kotlin and frontends with Angular and Nuxt.",
+        text: "Hi, my name is Mattia Müggler. I'm a twenty years old software engineer and work at Raiffeisen Schweiz. I live together with my family in Zuzwil. In my spare time I love to do some private coding-projects. In this curriculum vitae, I'm going to show you a few details about me. My preferred topics are developing backends with Go, but I'm also able to develop backends with Kotlin/Java. For my frontends I mostly use Nuxt (Vue) and Angular.",
       },
       hobbies: {
         title: "Hobbies",
         list: [
           "snowboarding",
-          "creating private projects",
+          "coding some private projects",
           "doing something with friends",
-          "being an active member of Jugendparlament St. Gallen",
         ],
       },
       skills: {
@@ -77,14 +76,14 @@ export default defineI18nConfig(() => ({
           {
             title: "Formtion (In development and marketing)",
             description:
-              "Formtion automatically creates a form to match your Notion database. You can also upload files to external providers like Google Drive, OneDrive or Dropbox. The first version is public and already has registered users. However, it is still under active development. Currently hosted on my private K8s cluster.",
+              "Formtion automatically generates a form to match your Notion database. You can also upload files to external providers like Google Drive, OneDrive or Dropbox. The first version is public and already has registered users. However, it is still under active development. Currently hosted on my private K8s cluster.",
             imagePath: "/images/formtion.png",
             href: "https://formtion.app",
           },
           {
             title: "Bookspread (in sales)",
             description:
-              "This is a platform for book authors to search and filter for publishers. They can find fitting publishers witch their genres. Further, they can add the publishers to their list and then submit all the required documents directly through the platform. The intelligent submission form checks the requirements of the publishers and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein youth projects competition and thus qualified for the interregional (St. Gallen, Liechtenstein, Vorarlberg) youth projects competition, which we also won. We have currently created a second platform for publishers on which manuscripts are analyzed using artificial intelligence. There are also plans to fundamentally revise the submission process and everything that goes with it as SaaS. Partially hosted on my private K8s cluster.",
+              "This is a platform for book authors to search and filter for publishers. They can find fitting publishers witch their genres. Further, they can add the publishers to their list and then submit all the required documents directly through the platform. The intelligent submission form checks the requirements of the publishers and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein youth projects competition and thus qualified for the interregional (St. Gallen - Switzerland, Liechtenstein, Vorarlberg - Austria) youth projects competition, which we also won. We have currently created a second platform for publishers on which manuscripts are analyzed using artificial intelligence. There are also plans to fundamentally revise the submission process and everything that goes with it as SaaS. Partially hosted on my private K8s cluster.",
             imagePath: "/images/bookspread.png",
             href: "https://bookspread.io",
           },
@@ -112,7 +111,7 @@ export default defineI18nConfig(() => ({
       name: "Mattia Müggler",
       about: {
         title: "Über mich",
-        text: "Hi, mein Name ist Mattia Müggler. Ich bin 20 Jahre alt und arbeite als Software Engineers bei Raiffeisen Schweiz. Ich lebe zusammen mit meiner Familie in Zuzwil. In meiner Freizeit entwickle ich gerne an privaten Projekten, was später noch genauer beschrieben wird. Am liebsten entwickle ich mit Go ein Backend, geschäfltich benutze ich jedoch Kotlin. Bei Frontends benutze ich geschäftlich Angular und privat Nuxt.",
+        text: "Hi, mein Name ist Mattia Müggler. Ich bin 20 Jahre alt und arbeite als Software Engineer bei Raiffeisen Schweiz. Ich lebe zusammen mit meiner Familie in Zuzwil. In meiner Freizeit entwickle ich gerne an privaten Projekten, was später noch genauer beschrieben wird. Am liebsten entwickle ich mit Go ein Backend, geschäfltich benutze ich jedoch Kotlin. Bei Frontends benutze ich geschäftlich Angular und privat Nuxt.",
       },
       hobbies: {
         title: "Hobbies",
@@ -120,7 +119,6 @@ export default defineI18nConfig(() => ({
           "Snowboarden",
           "Private Projekte Entwickeln",
           "Etwas mit Freunden unternehmen",
-          "Mitglied beim Jugendparlament St. Gallen",
         ],
       },
       skills: {
@@ -158,6 +156,7 @@ export default defineI18nConfig(() => ({
               "OIDC (Zitadel)",
               "OAuth",
               "Plausible",
+              "Ansible",
               "WordPress",
               "Notion",
             ],
