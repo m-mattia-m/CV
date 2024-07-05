@@ -7,7 +7,7 @@ export default defineI18nConfig(() => ({
       name: "Mattia Müggler",
       about: {
         title: "About me",
-        text: "Hi, my name is Mattia Müggler. I'm a twenty years old software engineer and work at Raiffeisen Schweiz. I live together with my family in Zuzwil. In my spare time I love to do some private coding-projects. In this curriculum vitae, I'm going to show you a few details about me. My preferred topics are developing backends with Go, but I'm also able to develop backends with Kotlin/Java. For my frontends I mostly use Nuxt (Vue) and Angular.",
+        text: "Hi, my name is Mattia Müggler. I'm a twenty-year-old software engineer and work at Raiffeisen Switzerland. I live with my family in Zuzwil. In my spare time, I love to do some private coding projects. In this curriculum vitae, I'm going to show you a few details about me. My preferred topics are developing backends with Go, but I'm also able to develop backends with Kotlin/Java. For my frontends, I mostly use Nuxt (Vue) and Angular.",
       },
       hobbies: {
         title: "Hobbies",
