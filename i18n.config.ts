@@ -53,6 +53,7 @@ export default defineI18nConfig(() => ({
               "OIDC (Zitadel)",
               "OAuth",
               "Plausible",
+              "Ansible",
               "WordPress",
               "Notion",
             ],
