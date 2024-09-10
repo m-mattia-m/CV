@@ -1,85 +1,123 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import type { Ref } from "vue";
+import { PlusIcon, MinusIcon } from "@heroicons/vue/24/outline";
+
+const openSkillIndex: Ref<number> = ref(-1);
+
+function toggleSkillState(index: number) {
+  if (openSkillIndex.value === index) return (openSkillIndex.value = -1);
+  openSkillIndex.value = index;
+}
+</script>
 
 <template>
-  <div class="h-screen w-full flex items-center">
+  <div class="w-full flex items-center">
     <div class="w-full">
       <h1 class="text-5xl text-dark dark:text-light pb-12">
         {{ $t("skills.title") }}
       </h1>
-      <div class="w-full flex flex-col md:flex-row justify-between items-start">
-        <div class="w-full h-full flex flex-col justify-start items-start">
-          <h2 class="text-3xl text-dark dark:text-light pt-2">
-            {{ $t("skills.content.programmingLanguages.title") }}
-          </h2>
-          <h3 class="text-2xl text-dark dark:text-light pt-2">
-            {{ $t("skills.content.programmingLanguages.main.title") }}
-          </h3>
-          <ul class="list-disc py-2">
-            <li
-              v-for="item in $tm(
-                'skills.content.programmingLanguages.main.list',
-              )"
-              :key="item"
-              class="list-item list-['\25fb'] list-inside marker:text-dark dark:marker:text-light"
+      <div
+        class="w-full flex flex-col justify-between items-start text-dark dark:text-white"
+      >
+        <ul class="w-full list-disc py-2 hidden lg:block">
+          <li
+            v-for="(skill, index) in $tm('skills.content')"
+            class="w-full list-['\25A1'] list-inside my-1"
+          >
+            <div
+              class="ml-6 -mt-[25px] grid grid-cols-10 grid-flow-col h-8 cursor-pointer"
+              @click="toggleSkillState(index)"
             >
-              <span class="pl-4 text-dark dark:text-light">{{
-                $rt(item)
-              }}</span>
-            </li>
-          </ul>
-          <h3 class="text-2xl text-dark dark:text-light pt-2">
-            {{ $t("skills.content.programmingLanguages.besides.title") }}
-          </h3>
-          <ul class="list-disc py-2">
-            <li
-              v-for="item in $tm(
-                'skills.content.programmingLanguages.besides.list',
-              )"
-              :key="item"
-              class="list-item list-['\25fb'] list-inside marker:text-dark dark:marker:text-light"
+              <p class="col-span-4 text-lg">{{ skill.title }}</p>
+              <p class="col-span-5 text-sm flex flex-row justify-end">
+                <span v-for="(tag, index) in skill.tags" class="flex flex-row">
+                  <span v-if="index !== 0" class="pr-2">, </span>
+                  <span>{{ tag }}</span>
+                </span>
+              </p>
+              <div class="col-span-1 flex justify-end items-center">
+                <PlusIcon
+                  v-if="openSkillIndex !== index"
+                  class="w-5 h-5 text-dark dark:text-white"
+                />
+                <MinusIcon
+                  v-if="openSkillIndex === index"
+                  class="w-5 h-5 text-dark dark:text-white"
+                />
+              </div>
+            </div>
+            <div
+              v-if="openSkillIndex === index"
+              class="text-justify ml-6 grid grid-cols-10 grid-flow-col my-8 text-base"
             >
-              <span class="pl-4 text-dark dark:text-light">{{
-                $rt(item)
-              }}</span>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="w-full h-full md:ml-6 flex flex-col justify-start items-start"
-        >
-          <h2 class="text-3xl text-dark dark:text-light pt-2">
-            {{ $t("skills.content.devops.title") }}
-          </h2>
-          <ul class="list-disc py-2">
-            <li
-              v-for="item in $tm('skills.content.devops.list')"
-              :key="item"
-              class="list-item list-['\25fb'] list-inside marker:text-dark dark:marker:text-light"
-            >
-              <span class="pl-4 text-dark dark:text-light">{{
-                $rt(item)
-              }}</span>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="w-full h-full md:ml-6 flex flex-col justify-start items-start"
-        >
-          <h2 class="text-3xl text-dark dark:text-light pt-2">
-            {{ $t("skills.content.more.title") }}
-          </h2>
-          <ul class="list-disc py-2">
-            <li
-              v-for="item in $tm('skills.content.more.list')"
-              :key="item"
-              class="list-item list-['\25fb'] list-inside marker:text-dark dark:marker:text-light"
-            >
-              <span class="pl-4 text-dark dark:text-light">{{
-                $rt(item)
-              }}</span>
-            </li>
-          </ul>
-        </div>
+              <p class="col-span-9">{{ skill.description }}</p>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="w-full py-2 block lg:hidden">
+          <li
+            v-for="(skill, index) in $tm('skills.content')"
+            class="w-full my-1 list-none"
+          >
+            <div class="cursor-pointer" @click="toggleSkillState(index)">
+              <div class="flex flex-row justify-between">
+                <p class="text-lg">{{ skill.title }}</p>
+                <div class="flex justify-end items-center">
+                  <PlusIcon
+                    v-if="openSkillIndex !== index"
+                    class="w-5 h-5 text-dark dark:text-white"
+                  />
+                  <MinusIcon
+                    v-if="openSkillIndex === index"
+                    class="w-5 h-5 text-dark dark:text-white"
+                  />
+                </div>
+              </div>
+              <p class="text-sm flex flex-row">
+                <template v-for="(tag, index) in skill.tags" class="">
+                  <template v-if="index !== 0" class="pr-2">, </template>
+                  {{ tag }}
+                </template>
+              </p>
+              <p
+                v-if="openSkillIndex === index"
+                class="text-justify my-8 text-base"
+              >
+                {{ skill.description }}
+              </p>
+            </div>
+
+            <!--            <div-->
+            <!--              class="ml-6 -mt-[25px] flex flex-row justify-between h-8 cursor-pointer"-->
+            <!--              @click="toggleSkillState(index)"-->
+            <!--            >-->
+            <!--              <p class="col-span-4 text-lg">{{ skill.title }}</p>-->
+            <!--              <div class="col-span-1 flex justify-end items-center">-->
+            <!--                <PlusIcon-->
+            <!--                  v-if="openSkillIndex !== index"-->
+            <!--                  class="w-5 h-5 text-dark dark:text-white"-->
+            <!--                />-->
+            <!--                <MinusIcon-->
+            <!--                  v-if="openSkillIndex === index"-->
+            <!--                  class="w-5 h-5 text-dark dark:text-white"-->
+            <!--                />-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--            <p class="text-sm flex flex-row ml-6">-->
+            <!--              <span v-for="(tag, index) in skill.tags" class="flex flex-row">-->
+            <!--                <span v-if="index !== 0" class="pr-2">, </span>-->
+            <!--                <span>{{ tag }}</span>-->
+            <!--              </span>-->
+            <!--            </p>-->
+            <!--            <p-->
+            <!--              v-if="openSkillIndex === index"-->
+            <!--              class="text-justify ml-6 mr-[84px] my-8 text-base"-->
+            <!--            >-->
+            <!--              {{ skill.description }}-->
+            <!--            </p>-->
+          </li>
+        </ul>
       </div>
     </div>
   </div>

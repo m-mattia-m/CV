@@ -20,13 +20,13 @@ export default {
         light: "#FBFBFF",
       },
       margin: {
-        mobile: "3rem",
+        mobile: "2rem",
         tablet: "6rem",
         desktop: "12rem",
         switch: "2rem",
       },
       padding: {
-        mobile: "3rem",
+        mobile: "2rem",
         tablet: "6rem",
         desktop: "12rem",
         switch: "2rem",
