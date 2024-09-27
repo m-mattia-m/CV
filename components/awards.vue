@@ -7,7 +7,7 @@
         {{ $t("awards.title") }}
       </h1>
       <div
-        class="w-full flex flex-col justify-center md:justify-around items-center py-8 text-dark dark:text-white"
+        class="w-full flex flex-col justify-center md:justify-around items-center py-8 text-dark dark:text-light"
       >
         <div
           v-for="award in $tm('awards.content')"

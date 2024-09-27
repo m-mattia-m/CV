@@ -17,8 +17,9 @@ function toggleSkillState(index: number) {
         {{ $t("skills.title") }}
       </h1>
       <div
-        class="w-full flex flex-col justify-between items-start text-dark dark:text-white"
+        class="w-full flex flex-col justify-between items-start text-dark dark:text-light"
       >
+        <!-- for desktop -->
         <ul class="w-full list-disc py-2 hidden lg:block">
           <li
             v-for="(skill, index) in $tm('skills.content')"
@@ -38,11 +39,11 @@ function toggleSkillState(index: number) {
               <div class="col-span-1 flex justify-end items-center">
                 <PlusIcon
                   v-if="openSkillIndex !== index"
-                  class="w-5 h-5 text-dark dark:text-white"
+                  class="w-5 h-5 text-dark dark:text-light"
                 />
                 <MinusIcon
                   v-if="openSkillIndex === index"
-                  class="w-5 h-5 text-dark dark:text-white"
+                  class="w-5 h-5 text-dark dark:text-light"
                 />
               </div>
             </div>
@@ -55,10 +56,11 @@ function toggleSkillState(index: number) {
           </li>
         </ul>
 
+        <!-- for mobile -->
         <ul class="w-full py-2 block lg:hidden">
           <li
             v-for="(skill, index) in $tm('skills.content')"
-            class="w-full my-1 list-none"
+            class="w-full py-4 list-none border-b-[0.5px] border-dark dark:border-light"
           >
             <div class="cursor-pointer" @click="toggleSkillState(index)">
               <div class="flex flex-row justify-between">
@@ -66,11 +68,11 @@ function toggleSkillState(index: number) {
                 <div class="flex justify-end items-center">
                   <PlusIcon
                     v-if="openSkillIndex !== index"
-                    class="w-5 h-5 text-dark dark:text-white"
+                    class="w-5 h-5 text-dark dark:text-light"
                   />
                   <MinusIcon
                     v-if="openSkillIndex === index"
-                    class="w-5 h-5 text-dark dark:text-white"
+                    class="w-5 h-5 text-dark dark:text-light"
                   />
                 </div>
               </div>
@@ -82,40 +84,11 @@ function toggleSkillState(index: number) {
               </p>
               <p
                 v-if="openSkillIndex === index"
-                class="text-justify my-8 text-base"
+                class="text-justify mt-8 mb-4 text-base"
               >
                 {{ skill.description }}
               </p>
             </div>
-
-            <!--            <div-->
-            <!--              class="ml-6 -mt-[25px] flex flex-row justify-between h-8 cursor-pointer"-->
-            <!--              @click="toggleSkillState(index)"-->
-            <!--            >-->
-            <!--              <p class="col-span-4 text-lg">{{ skill.title }}</p>-->
-            <!--              <div class="col-span-1 flex justify-end items-center">-->
-            <!--                <PlusIcon-->
-            <!--                  v-if="openSkillIndex !== index"-->
-            <!--                  class="w-5 h-5 text-dark dark:text-white"-->
-            <!--                />-->
-            <!--                <MinusIcon-->
-            <!--                  v-if="openSkillIndex === index"-->
-            <!--                  class="w-5 h-5 text-dark dark:text-white"-->
-            <!--                />-->
-            <!--              </div>-->
-            <!--            </div>-->
-            <!--            <p class="text-sm flex flex-row ml-6">-->
-            <!--              <span v-for="(tag, index) in skill.tags" class="flex flex-row">-->
-            <!--                <span v-if="index !== 0" class="pr-2">, </span>-->
-            <!--                <span>{{ tag }}</span>-->
-            <!--              </span>-->
-            <!--            </p>-->
-            <!--            <p-->
-            <!--              v-if="openSkillIndex === index"-->
-            <!--              class="text-justify ml-6 mr-[84px] my-8 text-base"-->
-            <!--            >-->
-            <!--              {{ skill.description }}-->
-            <!--            </p>-->
           </li>
         </ul>
       </div>
