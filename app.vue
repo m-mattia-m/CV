@@ -12,6 +12,7 @@
 
 .font {
   font-family: "IBM-3270", serif;
+  white-space: pre-line;
 }
 
 ::-moz-selection {
