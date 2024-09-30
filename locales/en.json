@@ -354,7 +354,7 @@
       },
       {
         "title": "Möbilo (deprecated)",
-        "description": "Before my friends and I developed Bookspread, we started creating Möbilo. We wanted to provide carpenters with an online tool so that their customers were able to configure their own furniture. After they finished the configuration they could generate a quote. However after talking to several companies, we came to the conclusion that there was not enough interest to make the project worthwhile.",
+        "description": "Before my friends and I developed Bookspread, we started creating Möbilo. We wanted to provide carpenters and joiners with an online tool so that their customers were able to configure their own furniture. After they finished the configuration they could generate a quote. However after talking to several companies, we came to the conclusion that there was not enough interest to make the project worthwhile.",
         "imagePath": "/images/moebilo.png",
         "href": "#"
       }
