@@ -48,7 +48,7 @@
         "tags": [
           "Tech",
           "Coding",
-          "Base knowledge",
+          "Basic knowledge",
           "Scripting"
         ]
       },
@@ -67,7 +67,7 @@
         "tags": [
           "Tech",
           "Coding",
-          "Base knowledge"
+          "Basic knowledge"
         ]
       },
       {
@@ -76,7 +76,7 @@
         "tags": [
           "Tech",
           "Coding",
-          "Base knowledge"
+          "Basic knowledge"
         ]
       },
       {
@@ -94,7 +94,7 @@
         "tags": [
           "Tech",
           "DevOps",
-          "Base knowledge"
+          "Basic knowledge"
         ]
       },
       {
@@ -103,7 +103,7 @@
         "tags": [
           "Tech",
           "DevOps",
-          "Base knowledge"
+          "Basic knowledge"
         ]
       },
       {
@@ -186,7 +186,7 @@
         "tags": [
           "Tech",
           "Database",
-          "Base knowledge"
+          "Basic knowledge"
         ]
       },
       {
@@ -244,7 +244,7 @@
         ]
       },
       {
-        "title": "Technologie I used",
+        "title": "Technologies I have used",
         "description": "I use S3 for Backups and file storing because it’s easy to implement,  standard, cheap and has many additional features like pre-signed URLs.\n\nVite was my development server when I started to work with Vue. Since I moved to Nuxt I don’t use Vite directly, but I do use it behind Nuxt.\n\nHugo is probably my preferred way to go for documentation and websites, which should be easy to update with a lot of information and don’t need a very complex design.\n\nOpenAPI is a very nice way to document my APIs. I generate this specification during the build, import it into my frontend application, and generate some functions out of this specification.\n\nReverse proxies like Traefik or Caddy are the tools I use to encrypt my traffic from my client to my services, which I have hosted on my VPS.",
         "tags": [
           "Tech"
