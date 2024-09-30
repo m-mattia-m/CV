@@ -99,7 +99,7 @@
       },
       {
         "title": "Helm",
-        "description": "I have worked with Helm and published some basic applications, respectively Kubernetes manifests with it. I also  templated some of the applications that I published by myself with Helm, but this  experience wasn’t particularly in depth.",
+        "description": "I have worked with Helm and published some basic applications, or rather Kubernetes manifests with it. I also  templated some of the applications that I published by myself with Helm, but this  experience wasn’t particularly in depth.",
         "tags": [
           "Tech",
           "DevOps",
@@ -108,7 +108,7 @@
       },
       {
         "title": "Github / Gitlab",
-        "description": "For my private projects, I use GitHub as my version control system. I have worked with GitLab too, but for my use cases, I like GitHub more than GitLab. I use Git for all my projects, although not every project has a very clean branch system because I work alone on my projects :). At work, we use GitLab, where the branch system is much cleaner. Consider that we use the semantic releasing naming convention because we use semantic releasing. So I’m able to use Git for my work.",
+        "description": "For my private projects, I use GitHub as my version control system. I have worked with GitLab too, but for my use cases, I like GitHub more than GitLab. I use Git for all my projects. Whereas my private projects might not always have the cleanest branch system, since I work alone, when I use GitLab at work the branch system is much cleaner. It has to be, since we use the semantic release naming convention and semantic release as the tool. So I do have a strong working knowledge of Git systems.",
         "tags": [
           "Tech",
           "DevOps",
