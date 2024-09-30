@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import LinkedIn from "~/public/icons/linkedin.svg";
 import Github from "~/public/icons/github.svg";
+import Darkmode from "~/components/molecules/darkmode.vue";
+import Language from "~/components/molecules/language.vue";
 </script>
 
 <template>
@@ -10,7 +12,11 @@ import Github from "~/public/icons/github.svg";
         <h1
           class="w-full text-7xl text-center uppercase text-light dark:text-dark"
         >
-          {{ $t("name") }}
+          <!--          <span-->
+          <!--            class="md:before:block md:before:absolute md:before:-inset-1 md:before:-skew-y-3 md:before:bg-dark dark:md:before:bg-light md:relative md:inline-block"-->
+          <!--          >-->
+          <span class="relative">{{ $t("name") }}</span>
+          <!--          </span>-->
         </h1>
         <div class="flex flex-row w-36 justify-between mt-12">
           <NuxtLink

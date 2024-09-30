@@ -1,0 +1,366 @@
+{
+  "name": "Mattia Müggler",
+  "about": {
+    "title": "About me",
+    "text": "Hi, my name is Mattia Müggler. I'm a twenty-one-year-old software engineer and I work at Raiffeisen Switzerland. I live with my family in Zuzwil which is near to St. Gallen. In my spare time, I love to do private coding projects. My main interest is developing backends with Go, but I'm also able to develop backends with Kotlin/Java. For my frontends, I mostly use Nuxt (Vue) and Angular. I really like tech, discovering something new and trying out new technologies."
+  },
+  "hobbies": {
+    "title": "Hobbies",
+    "list": [
+      "Snowboarding",
+      "Coding some private projects",
+      "Doing something with friends"
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "content": [
+      {
+        "title": "JavaScript / TypeScript",
+        "description": "I work with TypeScript every day because our frontend application is built with Angular. In my spare time, I also often work with TypeScript because I build my private frontends with Nuxt (Vue), which is also TypeScript.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Go",
+        "description": "Since spring 2022, I’ve been working with Go. I started using Go at work because our backend at the time was written in Go. Around the same time, I started using Go for my private projects because I really liked it on account of the syntax, high performance, easy readability, efficient resource management and more.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Java / Kotlin",
+        "description": "In the summer of 2023, we started to rewrite our Go backend in Kotlin on account of having more experienced developers in Kotlin and Java Go in our company. For this reason, among others, we switched to a Spring-Boot Kotlin application. Before this, I worked with Java and Spring Boot for more or less a year on my apprenticeship.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Python",
+        "description": "Around three or four years ago, I was experimenting with machine learning, and for this reason I worked with Python. At the same time, I wrote some scripts in Python to automate some private tasks.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Basic knowledge",
+          "Scripting"
+        ]
+      },
+      {
+        "title": "PHP",
+        "description": "During my apprenticeship I worked with PHP in my spare time because I built some websites and plugins with and for WordPress. A good friend was a huge WordPress fan, so we built our private projects like Bookspread and Möbilo with WordPress and coded some plugins for the custom functionality we wanted. Since WordPress is written in PHP, we also had to write these plugins in PHP. However for Bookspread we coded a huge PHP backend for our functionality, so it wasn’t only plugins we wrote in PHP, it was more PHP itself  for this backend.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "C / C++",
+        "description": "In C and C++, I don’t have as much experience as in the other coding languages, although I did work with these programming languages for about a year in my apprenticeship school.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Basic knowledge"
+        ]
+      },
+      {
+        "title": "C# / .NET",
+        "description": "In my apprenticeship school, we had to create a project in C# with .NET with the aim of building a mark management tool. On account of being a bigger project, we worked in groups of three. We had dynamic functionality for professional creation, as this tool could manage classes with students and teachers dynamically. This allows the administrator in each instance (e.g., headmaster) to define new professions and how this profession should be marked.They can define which weight each subject should have for the overall grade. There was also more functionality in this project, but this is a CV and not a description of this project :).",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Basic knowledge"
+        ]
+      },
+      {
+        "title": "OpenShift / Kubernetes",
+        "description": "At Raiffeisen Switzerland, we use OpenShift for the deployment of our applications. I'm working with the team that provides the OpenShift service and is responsible for it. For this reason I have some experience with OpenShift, but more as a developer on account of publishing our application on OpenShift. For my private projects, I have a fully managed Kubernetes service from DigitalOcean because I want to focus on the coding part and not the Kubernetes one, like how to add PVCs or other storage classes. Another reason is that I don’t want the pressure of bringing the cluster back online if the cluster has a problem. For this reason, I use this managed Kubernetes cluster. I’m happy with this decision and have most of my private applications hosted on this cluster.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "ArgoCD",
+        "description": "We use ArgoCD to deploy our applications at Raiffeisen Switzerland, which has given me some experience working withArgoCD. I set up an ArgoCD test instance to learn a bit more about it, but I don’t work with it for private projects. I would like to do it, but ArgoCD needs too many resources, which would be too expensive for my private cluster.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Basic knowledge"
+        ]
+      },
+      {
+        "title": "Helm",
+        "description": "I have worked with Helm and published some basic applications, or rather Kubernetes manifests with it. I also  templated some of the applications that I published by myself with Helm, but this  experience wasn’t particularly in depth.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Basic knowledge"
+        ]
+      },
+      {
+        "title": "Github / Gitlab",
+        "description": "For my private projects, I use GitHub as my version control system. I have worked with GitLab too, but for my use cases, I like GitHub more than GitLab. I use Git for all my projects. Whereas my private projects might not always have the cleanest branch system, since I work alone, when I use GitLab at work the branch system is much cleaner. It has to be, since we use the semantic release naming convention and semantic release as the tool. So I do have a strong working knowledge of Git systems.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "CI/CD",
+        "description": "To build and publish my source code, I use GitHub Actions to either build my images and publish them mostly to the GitHub container registry or publish the build to GitHub pages if possible. On account of my history with GitLab and from work, I also know GitLab Pipelines, but not as well as GitHub actions. I am confident working with GitHub Actions (building, publishing, ...).",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Docker",
+        "description": "For development, I always work with Docker. I run many tools which I need for development in a container, for example, my database, OpenTelemetry and more. For some private services which I run on a virtual private server (VPS), I use Docker too to deploy and publish these services (behind a VPN, but I want to enhance my security with a zero trust like Tailscale). To publish these services, I worked with Caddy but switched to Traefik to play with a new tool.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Angular",
+        "description": "At Raiffeisen Switzerland I work with Angular as I did with my first projects. So I have a good understanding of how to work with Angular.",
+        "tags": [
+          "Tech",
+          "Frontend",
+          "Framework",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Nuxt (Vue)",
+        "description": "For my private projects, I switched from Angular to Vue, and I don’t regret this decision. I really like the structure, simplicity, and lightweightness of Vue. Don’t get me wrong, I also like to work with Angular, but for the moment, I prefer to work with Vue for my private projects. Due to SEO, routing and many other things, I like to work with Nuxt as my framework because it handles many of these points.",
+        "tags": [
+          "Tech",
+          "Frontend",
+          "Framework",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Tailwind",
+        "description": "I’ve been a fan of Tailwind ever since I started working with it. I really like to add a class to my HTML for every part of a style. Even though it’s sometimes a bit of a pain to have dozens of classes in one element. :)",
+        "tags": [
+          "Tech",
+          "Frontend",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "SQL",
+        "description": "For many of the projects I’ve worked on, I used a relational database such as MySQL, or MariaDB. Sometimes I worked with plain SQL, and sometimes I used an object-relational mapping (ORM) framework.",
+        "tags": [
+          "Tech",
+          "Database",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "MongoDB",
+        "description": "For my latest projects, I used MongoDB to try out this database, and I really enjoyed it. It was sometimes a bit strange to operate with a non-relational database, though.",
+        "tags": [
+          "Tech",
+          "Database",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Redis",
+        "description": "I implemented Redis for some private projects as a cache database. I'm able to implement this technology and use it, but I don't have deep knowledge of it.",
+        "tags": [
+          "Tech",
+          "Database",
+          "Basic knowledge"
+        ]
+      },
+      {
+        "title": "OIDC (Zitadel)",
+        "description": "For all my latest projects, I used an OIDC provider (mostly Zitadel and sometimes Keycloak). I really like to have many security benefits, like 2FA, passkeys and more, in my application without having to implement them by myself. As a SaaS developer, I want a secure solution and user management that works well. I can redeem a bearer token and add this token as the authorization to the request. The backend can verify this token if it’s valid, which is really nice.",
+        "tags": [
+          "Tech",
+          "Standard",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "OAuth 2.0",
+        "description": "I have also worked with OAuth 2.0 for authorisation. In my SaaS project, the user has to grant a few Google Drive scopes so that he can upload files to his own drive. For this feature, I worked with OAuth 2.0 granting.",
+        "tags": [
+          "Tech",
+          "Standard",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Tracking (Plausible)",
+        "description": "At the moment, I work with Plausible to track user traffic on my websites. I’m more or less satisfied with Plausible, but I will probably try out PostHog in the future because it has many more features.",
+        "tags": [
+          "Tech",
+          "Tool",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Ansible",
+        "description": "As I mentioned before, I have my services, which I host on a VPS. To set these services up, I have a modular Ansible script that covers all my basic needs, and I can easily add a new service and run this script with the new service, which will be added to my infrastructure.",
+        "tags": [
+          "Tech",
+          "Scripting",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "CMS (wordpress)",
+        "description": "For our first projects, like Möbilo and Bookspread we used WordPress as our content management system and web application. For this reason, I have a deeper knowledge of WordPress. However, for my current projects, I’m evaluating headless CMS systems like Hygraph, Contentful and Storyblok because I want a headless system to build my own frontend application.",
+        "tags": [
+          "Tech",
+          "Tool",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Notion",
+        "description": "Since I first heard about Notion, I've been a big fan. I manage and store almost everything in Notion. I document every tool I’ve worked with, as well as articles and more, in Notion. Even the tasks for my private projects I track in Notion with a kanban board.",
+        "tags": [
+          "Tech",
+          "Tool",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Technologies I have used",
+        "description": "I use S3 for Backups and file storing because it’s easy to implement,  standard, cheap and has many additional features like pre-signed URLs.\n\nVite was my development server when I started to work with Vue. Since I moved to Nuxt I don’t use Vite directly, but I do use it behind Nuxt.\n\nHugo is probably my preferred way to go for documentation and websites, which should be easy to update with a lot of information and don’t need a very complex design.\n\nOpenAPI is a very nice way to document my APIs. I generate this specification during the build, import it into my frontend application, and generate some functions out of this specification.\n\nReverse proxies like Traefik or Caddy are the tools I use to encrypt my traffic from my client to my services, which I have hosted on my VPS.",
+        "tags": [
+          "Tech"
+        ]
+      },
+      {
+        "title": "Future Topics",
+        "description": "I’m really interested in tech, so I have many other tools, frameworks, and protocols I want to try. Some of these I’m listing here, but consider that I’ve tried a few of them already, but I want to try them more: \ngRPC, GraphQL, performance, security (zero-trust, certificates), CMS (Hygraph, Contentful, Storyblok), OpenTelementry, Message Queuing (Kafka), machine learning, rust, API-Manangement, Git - Semantic Releasing, Search engines.\n\nI experimented a bit with GraphQL, but I want to try it on a real service. \n\nI’m also really fascinated by performance and how I can make my code high performing. My goal is to write good code, but always keeping the performance aspect in mind. \n\nAs I mentioned before, I want to add Tailscale to my own infrastructure as a zero-trust layer. Sometimes I'm really keen on a topic like security, and then I experiment with this technology. For this reason, I created my own certificates to understand how they work. While I was experimenting with these certificates, I published my public certificate/key on my website so that everyone can download and import them for an encrypted communication with me. Since I understand how certificates work, I have new ideas for how to use them, e.g., mutual authentication for APIs. Even though I'm not an expert in encryption or certificates, I'm interested in this technology. \n\nI worked with Kafka, but I would like to develop my knowlege of this topic because it is very interesting. \n\nFour years ago, in my apprenticeship, I was experimenting with machine learning in my spare time and did all the typical stuff like sorting clothes or animals. I would like to work on this topic in the future because it is a very interesting subject. \n\nRust seems to be a very absorbing programming language, which I want to try. \n\nI also want to try using  search engines like ElasticSearch, Algolia or Typesense.",
+        "tags": [
+          "Tech"
+        ]
+      }
+    ]
+  },
+  "awards": {
+    "title": "Awards",
+    "content": [
+      {
+        "title": "International youth project competition",
+        "description": "With Bookspread, we won the Liechtenstein Youth Projects competition and thus qualified for the international (St. Gallen - Switzerland, Liechtenstein, Vorarlberg - Austria) youth projects competition, which we also won.",
+        "mentions": [
+          {
+            "title": "Interview Bookspread-Projektgruppe (youtube.com)",
+            "url": "https://youtu.be/hQn_qXLESb4?si=Mbt9-akT7etwLeIm"
+          },
+          {
+            "title": "Finale des regionalen Jugendprojekt-Wettbewerbs am Samstag in Triesen (vaterland.li)",
+            "url": "https://www.vaterland.li/liechtenstein/kultur/den-passenden-verlag-per-mausklick-finden-art-514137"
+          },
+          {
+            "title": "Interregionaler Jugendprojekt-Wettbewerb: Sieger gekürt (gsi-news.at)",
+            "url": "https://www.gsi-news.at/2022/11/27/interregionaler-jugendprojekt-wettbewerb-sieger-gekuert/"
+          },
+          {
+            "title": "Mit kreativen Ideen die Jury begeistert (vaterland.li)",
+            "url": "https://www.vaterland.li/liechtenstein/gesellschaft/mit-kreativen-ideen-die-jury-begeistert-art-509587"
+          },
+          {
+            "title": "Youth Project Competition 2022 (backstage.li)",
+            "url": "https://backstage.li/liechtenstein-gewinnt-jugendprojekt-wettbewerb-2022/"
+          },
+          {
+            "title": "These are the projects for 2022 (aha.li)",
+            "url": "https://www.aha.li/das-sind-die-projekte-2022"
+          },
+          {
+            "title": "Three projects in the final (aha.li)",
+            "url": "https://aha.li/die_vorausscheidung"
+          }
+        ],
+        "images": [
+          "/images/awards/bookspread/bookspread-team.png",
+          "/images/awards/bookspread/bookspread-on-stage.png",
+          "/images/awards/bookspread/bookspread-lichtenstein-compitition.png",
+          "/images/awards/bookspread/bookspread-won-liechtenstein.png",
+          "/images/awards/bookspread/bookspread-won-again.png"
+        ]
+      },
+      {
+        "title": "Best \"Individual practice work\" (IPA) from ICT Eastern Switzerland",
+        "description": "My final project in my apprenticeship was honored as the highest graded project of the year by ICT Eastern Switzerland.",
+        "mentions": [
+          {
+            "title": "LinkedIn Post (linkedin.com)",
+            "url": "https://www.linkedin.com/posts/mattia-mueggler_gestern-war-die-qv-feier-meiner-ausbildung-activity-7082417704485179392-Guzi"
+
+          }
+        ],
+        "images": [
+          "/images/awards/ipa/ipa-stage-with-mark.jpg",
+          "/images/awards/ipa/ipa-stage-with-moderator.jpg",
+          "/images/awards/ipa/ipa-mark-slide.png"
+        ]
+      }
+    ]
+  },
+  "currentWork": {
+    "title": "Work",
+    "text": "My team offers a self-service platform where developers are able to create their own projects. On it, they can create OpenShift namespaces, GitLab groups, Artifactory repositories and MySQL or MongoDB databases. Furthermore, you can authorise collaborators from the group to work on different projects and customise existing projects. For example, an OpenShift namespace could be resized with updating the quota. This was developed for the external development environment as well as the internal environment. The backend was solved with Kotlin and a microservice architecture. The frontend was developed with Angular. If one service has to notify the other services, we use Kafka to send a message, and all services can subscribe to these messages."
+  },
+  "privateProjects": {
+    "title": "Private Projects",
+    "content": [
+      {
+        "title": "Notify (In development and planning)",
+        "description": "Notify is a simple secure message gateway which allows you to send messages from your frontend. Connect Slack or Mailgun to send Messages. The advantage is that you don’t have to expose an API key in the frontend, as host verification is used. Any number of workflows and message templates can be added in the notify backend. The code is open source and the first version has already been released. In the future it’s planned to offer fully managed instances (similar to Plausible or Zitadel). It’s currently hosted on my private K8s cluster.",
+        "imagePath": "/images/notify.jpeg",
+        "href": "https://github.com/m-mattia-m/Notify"
+      },
+      {
+        "title": "Formtion (In development and marketing)",
+        "description": "Formtion automatically generates a form which matches your Notion database. You can also upload files to external providers like Google Drive, OneDrive or Dropbox. The first version is public and has already registered users. However, it is still under active development. It’s currently hosted on my private K8s cluster.",
+        "imagePath": "/images/formtion.png",
+        "href": "https://formtion.app"
+      },
+      {
+        "title": "Bookspread (deprecated)",
+        "description": "This is a platform for book authors to search and filter for publishers. They can find fitting publishers with their genres. Furthermore, they can add the publishers to their favourites list and submit all the required documents directly through the platform. The intelligent submission form checks the requirements of each publisher and sends the right documents to the publisher requesting them. With this platform, we won the Liechtenstein Youth Projects competition and thus qualified for the interregional (St. Gallen - Switzerland, Liechtenstein, Vorarlberg - Austria) youth projects competition, which we also won. We created a second platform for publishers, which analysed manuscripts using artificial intelligence. There were also plans to fundamentally revise the submission process and everything that goes with it as a SaaS solution. It’s partially hosted on my private K8s cluster.",
+        "imagePath": "/images/bookspread.png",
+        "href": "https://bookspread.io"
+      },
+      {
+        "title": "CRM (in use)",
+        "description": "I developed a customer relationship management system (CRM) for a private client and customized it to his needs. The goal was to develop a platform where he and his employee can create customers and reports which are based on a customer, so they can see when and what was agreed. For identity management I included Zitadel. It has worked well since the beginning of 2022.",
+        "imagePath": "/images/crm.png",
+        "href": "#"
+      },
+      {
+        "title": "Möbilo (deprecated)",
+        "description": "Before my friends and I developed Bookspread, we started creating Möbilo. We wanted to provide carpenters and joiners with an online tool so that their customers were able to configure their own furniture. After they finished the configuration they could generate a quote. However after talking to several companies, we came to the conclusion that there was not enough interest to make the project worthwhile.",
+        "imagePath": "/images/moebilo.png",
+        "href": "#"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Mattia Müggler"
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "name": "Mattia Müggler",
+  "about": {
+    "title": "Über mich",
+    "text": "Hi, mein Name ist Mattia Müggler. Ich bin ein einundzwanzigjähriger Software-Entwickler und arbeite bei Raiffeisen Schweiz. Ich lebe zusammen mit meiner Familie in Zuzwil, nähe St. Gallen. In meiner Freizeit liebe ich es private Projekte zu entwickeln. Mein Hauptinteresse ist die Entwicklung von Backends mit Go, entwickle aber auch mit Kotlin/Java und TypeScript/JavaScript. Für die Frontendanwendungen benutze ich meistens Nuxt (Vue) aber auch Angular. Ich mag es sehr mich mit neuen Technologien auseinanderzusetzen und etwas Neues zu entdecken."
+  },
+  "hobbies": {
+    "title": "Hobbies",
+    "list": [
+      "Snowboarden",
+      "Private Projekte programmieren",
+      "Etwas mit Freunden unternehmen"
+    ]
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "content": [
+      {
+        "title": "JavaScript / TypeScript",
+        "description": "Ich programmiere täglich mit TypeScript, da unsere Frontendanwendung Angular ist. Ebenfalls arbeite ich viel mit TypeScirpt in meiner Freizeit, da ich Nuxt (Vue) für meine Frontendanwendungen verwende.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Go",
+        "description": "Seit dem Frühling 2022 arbeite ich mit Go als Programmiersprache. Mit Go angefangen habe ich, da unser Backend zu dieser Zeit damit entwickelt wurde. Etwa zur gleichen Zeit habe ich auch begonnen Go privat für meine Projekte zu benutzen. Ich mag diese Sprache sehr aufgrund ihrer Syntax, hohen Performance, einfache Lesbarkeit und effizientes Ressourcenmanagement.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Java / Kotlin",
+        "description": "Im Sommer 2023 haben wir unser Backend von Go auf Kotlin umgestellt, da in unserer Firma mehr Entwickler arbeiten, welche mehr Erfahrung mit Kotlin haben als mit Go. Hauptsächlich aus diesem Grund haben wir auf eine Kotlin Spring-Boot Applikation gewechselt. Davor habe ich während meiner Ausbildung für etwa ein Jahr mit Java und Spring Boot gearbeitet.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Python",
+        "description": "Vor etwa drei Jahren habe ich mit Machine learning experimentiert. Aus diesem Grund habe ich mit Python gearbeitet. Dazu habe ich zu dieser Zeit ein paar Automatisierungsaufgaben umgesetzt.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Base knowledge",
+          "Scripting"
+        ]
+      },
+      {
+        "title": "PHP",
+        "description": "Während meiner Ausbildung habe ich in meiner Freizeit ebenfalls PHP benutzt. Ich habe einige Webseiten und Plugins mit und für WordPress entwickelt. Der Grund dafür war, dass ein guter Freund ein riesiger WordPress Fan ist und somit haben wir unsere privaten Projekte wie Bookspread und Mobile mit WordPress umgesetzt. Wir haben aber nicht nur WordPress benutzt, sondern haben für die eigene Funktionalität eigene Erweiterungen eingebaut. Da WordPress mit PHP entwickelt wurde, haben wir diese Plugins auch mit PHP geschrieben. Wir haben aber nicht nur einfach Plugins entwickelt, sondern vor allem auch für Bookspread ein eigenes Backend geschrieben.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "C / C++",
+        "description": "In C und C++ habe ich nicht so viel Erfahrungen wie in den anderen Programmiersprachen. Ich habe diese Programmiersprache hauptsächlich etwa ein Jahr während meiner Ausbildung benutzt. Ansonsten habe ich keine weiteren Erfahrungen mit diesen Sprachen.",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Base knowledge"
+        ]
+      },
+      {
+        "title": "C# / .NET",
+        "description": "Während meiner Ausbildung mussten wir in der Schule ein Projekt mit C# (.NET) umsetzen. Dies war ein grösseres Projekt, welches in Dreiergruppen umgesetzt wurde, bei welchem wir ein Notenmanagementsystem [erstellen]() mussten. Man konnte dynamisch Berufe, Klassen mit Schülern und Lehrern erstellen. Der Instanzadministrator (z.B. Schulleiter) konnte neue Berufe und ein Bewertungsraster dafür erstellen. Dabei konnte man Themenbereiche, Fächer und Gruppen erstellen und diesen jeweils eine eigene Rundung und Gewichtung geben. Es hatte noch weitere Features, aber dies soll keine Projektbeschreibung sein :).",
+        "tags": [
+          "Tech",
+          "Coding",
+          "Base knowledge"
+        ]
+      },
+      {
+        "title": "OpenShift / Kubernetes",
+        "description": "Bei Raiffeisen Schweiz, benutzen wir OpenShift für das Deployment der Applikationen. Ich arbeite aktuell im Team, welches OpenShift anbietet und dafür verantwortlich ist. Aus diesem Grund habe ich gewisse Kenntnisse in OpenShift, aber mehr aus Entwicklersicht und nicht aus Administratorsicht. Der Grund ist, dass wir unsere Applikationen ebenfalls auf OpenShift deployen. Für meine privaten Projekte benutze ich ein fully managed Kubernetes Cluster von DigitalOcean, da ich mich auf mein Projekt und das Entwickeln davon fokussieren möchte. Zu viel Zeit für Kubernetes selbst und Fragen wie ich PVCs oder andere Speicherklassen hinzufüge, möchte ich nicht aufwenden. Ich möchte mich auch nicht um die Uptime kümmern müssen und den Druck haben, den Cluster wieder online bringen zu müssen, falls dieser ein Problem hat. Deshalb habe ich mich entschieden einen managed Kubernetes Cluster zu benutzen und bin bisher mit dieser Entscheidung zufrieden. Die meisten meiner Applikationen hoste ich auf diesem Cluster.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "ArgoCD",
+        "description": "Um Applikationen zu deployen benutzen wir ArgoCD in unserem Team. Darum habe ich auch schon damit gearbeitet. Ich habe ebenfalls auch schon eine eigene Testinstanz aufgesetzt jedoch benutze ich es privat nicht, auch wenn ich dies gerne würde. Das Problem ist, dass ArgoCD relativ viel Ressourcen benötigen und dies für meinen privaten Cluster zu teuer wäre.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Base knowledge"
+        ]
+      },
+      {
+        "title": "Helm",
+        "description": "Ich habe auch schon mit Helm gearbeitet und ein paar einfache Applikation bzw. Kubernetes Manifeste damit veröffentlicht. Die Applikationen habe ich selbst mit Helm templatisiert, jedoch habe ich in diesem Bereich kein vertieftes Wissen.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Base knowledge"
+        ]
+      },
+      {
+        "title": "Github / Gitlab",
+        "description": "Für meine privaten Projekte benutze ich GitHub als mein Version Control System. Ich habe auch schon mit GitLab gearbeitet aber für meine Use-Cases mag ich GitHub mehr. Ich benutze Git für alle meine privaten Projekte, auch wenn nicht jedes Projekt ein sauberes Branch System hat, da ich daran meistens allein arbeite :). Auf der Arbeit benutzen wir GitLab, wo wir auch das Branching System deutlich schöner handhaben und wir mit Semantic Releasing arbeiten. Darum halte ich dort auch die Namenskonventionen ein, damit die generierten Notizen von Semantic Releasing auch stimmen.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "CI/CD",
+        "description": "Um meinen Source code zu builden und publishen, benutze ich GitHub Actions. Hierbei builde ich entweder ein Image und speichere dieses meistens in die GitHub Container Registry oder veröffentliche das Ergebnis direkt auf GitHub Pages wenn möglich. Aufgrund meiner Vergangenheit und von der Arbeit kenne ich auch GitLab Pipelines, auch wenn nicht gleich gut wie GitHub Actions.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Docker",
+        "description": "Für die Entwicklung arbeite ich immer mit Docker. Ich lasse die meisten Programme, welche ich für die Entwicklung brauche z.B. Datenbanken, OpenTelementry, ... in einem Container laufen. Für ein paar private Services habe ich ein Virtual Private Server (VPS) auf welchem ich diese Services mittels Docker laufen lasse und mittels Reverse Proxy veröffentliche. Aktuell arbeite ich mit Traefik, aber habe in meiner Vergangenheit auch schon mit Caddy gearbeitet. Aktuell sind diese Services nur hinter einem VPN abrufbar jedoch möchte ich die Security erhöhen, indem ich einen Zero Trust wie Tailscale dazwischen schalte.",
+        "tags": [
+          "Tech",
+          "DevOps",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Angular",
+        "description": "Ich arbeite täglich im Geschäft mit Angular und aus früheren privaten Projekten kenne ich Angular auch. Aus diesem Grund habe ich ein gutes Verständnis für Angular.",
+        "tags": [
+          "Tech",
+          "Frontend",
+          "Framework",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Nuxt (Vue)",
+        "description": "Für meine privaten Projekte bin ich von Angular auf Vue umgestiegen und bin bisher zufrieden damit. Ich mag die Struktur, Einfachheit und dass es so Lightweight ist. Aber versteht mich nicht falsch, ich mag es auch mit Angular zu arbeiten aber im Moment bevorzuge ich es Vue für meine privaten Projekte zu nutzen Aus SEO, Routing und weiteren Gründen arbeite ich mit Nuxt als mein Framework, welches mir vieles davon abnimmt.",
+        "tags": [
+          "Tech",
+          "Frontend",
+          "Framework",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Tailwind",
+        "description": "Seit ich angefangen habe mit Tailwind zu arbeiten, bin ich ein grosser Fan davon. Ich mag es für das styling einfach eine Klasse zu meinem DOM bzw. Element hinzufügen zu können. Auch wenn es manchmal etwas mühsam ist, wenn man dutzende Klassen in einem Element hat :).",
+        "tags": [
+          "Tech",
+          "Frontend",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "SQL",
+        "description": "Für viele Projekte, an denen ich mitgearbeitet habe, benutzten wir eine relationale Datenbank wie MySQL oder manchmal MariaDB. Teilweise arbeite ich mit plain SQL, aber meistens benutze ich ein Object-Relational-Mapping (ORM) Framework.",
+        "tags": [
+          "Tech",
+          "Database",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "MongoDB",
+        "description": "Für meine letzten Projekte benutzte ich MongoDB, um diese Datenbank auszuprobieren, was mir gefiel. Auch wenn es manchmal etwas seltsam wirkt auf einer nicht relationalen Datenbank zu arbeiten.",
+        "tags": [
+          "Tech",
+          "Database",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Redis",
+        "description": "Ich implementierte Redis in ein paar privaten Projekten als Cache Datenbank. Ich kann diese Technologie implementieren und benutzen, habe aber kein vertieftes Verständnis darüber.",
+        "tags": [
+          "Tech",
+          "Database",
+          "Base knowledge"
+        ]
+      },
+      {
+        "title": "OIDC (Zitadel)",
+        "description": "Für alle meine letzten Projekte habe ich ein OIDC Anbieter (meistens Zitadel und manchmal Keycloak) benutzt. Den grossen Vorteil, den ich sehe, ist, dass man viele Sicherheitsaspekte direkt implementiert hat, ohne dass man diese selbstständig implementieren muss. Als SaaS Entwickler möchte ich einfach eine sichere Lösung und ein User Management, welches gut funktioniert. Ich kann einen Bearer Token lösen und dieses Token als Authentifizierung/Autorisierung dem Request anfügen. Im Backend kann ich diesen Token verifizieren was ich als sehr elegantes Vorgehen empfinde.",
+        "tags": [
+          "Tech",
+          "Standard",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "OAuth 2.0",
+        "description": "Ich habe ebenfalls für die Autorisierung mit OAuth 2.0 gearbeitet. In meiner SaaS Applikation habe ich implementiert, dass der Benutzer ein paar Google Drive Scopes freigeben kann, damit dieser seine Dateien in sein eigenes Drive hochladen kann. Für dieses Feature habe ich mit OAuth 2.0 Freigaben gearbeitet.",
+        "tags": [
+          "Tech",
+          "Standard",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Tracking (Plausible)",
+        "description": "Aktuell arbeite ich mit Plausible, um mein User Traffic aufzuzeichnen. Ich bin mehr oder weniger zufrieden mit Plausible, jedoch werde ich wahrscheinlich PostHog in der Zukunft mal ausprobieren, da es deutlich mehr Features hat.",
+        "tags": [
+          "Tech",
+          "Tool",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Ansible",
+        "description": "Wie ich zuvor mal erwähnt habe, habe ich einige meiner Services auf einem VPS gehosted. Um diese Services aufzusetzen habe ich ein modularer Ansible Script, welches alle meine einfachen Bedürfnisse abdeckt. Somit kann ich sehr einfach einen neuen Service hinzufügen, das Script ausführen und der Service wird meiner Infrastruktur hinzugefügt.",
+        "tags": [
+          "Tech",
+          "Scripting",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "CMS (wordpress)",
+        "description": "Für unsere ersten Projekte wie Möbilo oder Bookspread haben wir WordPress als unser Content Management System (CMS) und WebApplication benutzt. Für meine aktuellen Projekte evaluiere ich aktuell ein headless CMS system wie Hygraph, Contentful und Storyblok. Ich möchte ein headless System, da ich mein eigenes Frontend dazu bauen möchte.",
+        "tags": [
+          "Tech",
+          "Tool",
+          "Intermediate knowledge"
+        ]
+      },
+      {
+        "title": "Notion",
+        "description": "Seit ich das erste Mal von Notion gehört habe, bin ich ein grosser Fan davon. Ich verwalte und speichere fast alles in Notion. Jedes Tool, mit welchem ich arbeite, dokumentiere ich und speichere viele Artikel in Notion. Sogar das Verwalten meiner Tasks für die privaten Projekte mache ich in Notion mittels Kanbanboard.",
+        "tags": [
+          "Tech",
+          "Tool",
+          "Advanced knowledge"
+        ]
+      },
+      {
+        "title": "Technologie I used",
+        "description": "Für Backups und Dateiabspeicherungen benutze ich normalerweise S3, da es einfach zu implementieren, ein Standard und günstig ist. Dazu hat man noch viele zusätzliche Features wie pre-signed URLs. \n\nVite war mein Entwicklungsserver, als ich mit Vue angefangen habe zu arbeiten. Seit ich zu Nuxt gewechselt bin, benutze ich Vite nicht mehr direkt, aber Vite wird als Engine für den Entwicklungsserver weiterhin im Hintergrund benutzt. \n\nHugo ist wahrscheinlich mein way to go für Dokumentationen und Webseiten, welche einfach zu verwalten sein sollten, viele Informationen haben und keine komplexe Struktur und Design benötigen.\n\nOpenAPI ist ein schöner Weg seine API zu dokumentieren, deshalb und da es ein Standard ist, benutze ich es. Ich generiere die Spezifikation während dem Build und importiere es in meine Frontend Applikation und lasse daraus die Funktionen und Klassen generieren.\n\nReverse Proxy wie Traefik oder Caddy sind die Schnittstellen, welche ich benutze, um eine Kommunikation zu den Services, welche ich hoste mit TLS zu verschlüsseln.",
+        "tags": [
+          "Tech"
+        ]
+      },
+      {
+        "title": "Future Topics",
+        "description": "Ich bin sehr interessiert in Technologien, darum habe ich viele weitere Tools, Frameworks und Protokolle, welche ich mal ausprobieren möchte. Einige davon sind: \ngRPC, GraphQL, Performance, Security (zero-trust, Zertifikate), CMS (Hygraph, Contentful, Storyblok), OpenTelementy, Message Queuing (Kafka), Machine learning, Rust, API-Management, Git - Semantic Releasing, Search Engines (ElasticSearch, Algolia, Typesense). \n\nIch habe aber bereits ein paar davon benutzt und kurz ausprobiert, jedoch möchte ich diese nochmals etwas intensiver ausprobieren.\n\nIch habe bereits mit GraphQL experimentiert, jedoch möchte ich gerne mal einen richtigen Service damit umsetzen.\n\nPerformance interessiert mich sehr und ich versuche immer zu überlegen, wie ich den Code performant schreiben kann. Mein Ziel ist es guten Code zu schreiben, zugleich aber immer den Performance Aspekt im Hinterkopf zu haben.\n\nWie ich bereits erwähnt habe, möchte ich gerne Tailscale zu meiner eigenen Infrastruktur als Zero-trust-layer hinzufügen.\n\nManchmal bin ich fasziniert von Security und experimentiere dann damit herum. Um zu verstehen, wie Zertifikate funktionieren, habe ich meine eigenen erstellt. Während ich damit experimentiert, habe ich mein öffentliches Zertifikat/Key auf meiner Webseite veröffentlicht, damit jeder diesen herunterladen und importieren kann, um mit mir verschlüsselt zu kommunizieren. Seit ich verstanden habe wie Zertifikate funktionieren kommen mir immer wieder Ideen, was man alles damit machen kann z.B. mutual authentication für APIs. Auch wenn ich definitiv kein Sicherheitsexperte bin auch nicht in Verschlüsselung oder Zertifikaten bin ich interessiert in dieser Technologie.\n\nIch habe bereits mal kurz mit Kafka gearbeitet, möchte jedoch mehr und tiefer über diese Technologie erfahren, da es ein faszinierendes Thema ist.\n\nIm Jahr 2019/2020, als ich meine Ausbildung angefangen habe, habe ich bereits während meiner Freizeit mit Machine Learning experimentiert und machte typische Sachen wie Kleider oder Tiere sortieren. Ich würde in Zukunft auch gerne an diesem Thema weiterarbeiten/-lernen. \n\nRust sieht nach einer sehr vielversprechenden Programmiersprache aus, welche ich mal ausprobieren möchte. \n\nEbenfalls möchte ich mal mit einer Search Engine wie ElasticSearch, Algolia oder Typesense arbeiten.",
+        "tags": [
+          "Tech"
+        ]
+      }
+    ]
+  },
+  "awards": {
+    "title": "Auszeichnungen",
+    "content": [
+      {
+        "title": "Internationale Jugendprojektwettbewerb",
+        "description": "Mit Bookspread haben wir den Jugendprojektwettbewerb Liechtenstein gewonnen, wodurch wir uns für den interregionalen (St. Gallen - Schweiz, Liechtenstein und Vorarlberg - Austria) Jugendprojektwettbewerb qualifiziert haben, welchen wir ebenfalls gewonnen haben.",
+        "mentions": [
+          {
+            "title": "Interview Bookspread-Projektgruppe (youtube.com)",
+            "url": "https://youtu.be/hQn_qXLESb4?si=Mbt9-akT7etwLeIm"
+          },
+          {
+            "title": "Finale des regionalen Jugendprojekt-Wettbewerbs am Samstag in Triesen (vaterland.li)",
+            "url": "https://www.vaterland.li/liechtenstein/kultur/den-passenden-verlag-per-mausklick-finden-art-514137"
+          },
+          {
+            "title": "Interregionaler Jugendprojekt-Wettbewerb: Sieger gekürt (gsi-news.at)",
+            "url": "https://www.gsi-news.at/2022/11/27/interregionaler-jugendprojekt-wettbewerb-sieger-gekuert/"
+          },
+          {
+            "title": "Mit kreativen Ideen die Jury begeistert (vaterland.li)",
+            "url": "https://www.vaterland.li/liechtenstein/gesellschaft/mit-kreativen-ideen-die-jury-begeistert-art-509587"
+          },
+          {
+            "title": "Youth Project Competition 2022 (backstage.li)",
+            "url": "https://backstage.li/liechtenstein-gewinnt-jugendprojekt-wettbewerb-2022/"
+          },
+          {
+            "title": "These are the projects for 2022 (aha.li)",
+            "url": "https://www.aha.li/das-sind-die-projekte-2022"
+          },
+          {
+            "title": "Three projects in the final (aha.li)",
+            "url": "https://aha.li/die_vorausscheidung"
+          }
+        ],
+        "images": [
+          "/images/awards/bookspread/bookspread-team.png",
+          "/images/awards/bookspread/bookspread-on-stage.png",
+          "/images/awards/bookspread/bookspread-lichtenstein-compitition.png",
+          "/images/awards/bookspread/bookspread-won-liechtenstein.png",
+          "/images/awards/bookspread/bookspread-won-again.png"
+        ]
+      },
+      {
+        "title": "Beste \"Individuelle Praxisarbeit\" (IPA) von ICT Ostschweiz",
+        "description": "Mein Abschlussprojekt meiner Ausbildung wurde als bestes Projekt beziehungsweise Note des Jahres von ICT Ostschweiz ausgezeichnet.",
+        "mentions": [
+          {
+            "title": "LinkedIn Beitrag (linkedin.com)",
+            "url": "https://www.linkedin.com/posts/mattia-mueggler_gestern-war-die-qv-feier-meiner-ausbildung-activity-7082417704485179392-Guzi"
+
+          }
+        ],
+        "images": [
+          "/images/awards/ipa/ipa-stage-with-mark.jpg",
+          "/images/awards/ipa/ipa-stage-with-moderator.jpg",
+          "/images/awards/ipa/ipa-mark-slide.png"
+        ]
+      }
+    ]
+  },
+  "currentWork": {
+    "title": "Arbeit",
+    "text": "Mein Team bietet eine Self-Service-Plattform an bei dem Entwickler selbstständig ihre eigenen Projekte erstellen können. Man kann OpenShift-Namespaces, Gitlab Gruppen, Artifactory Repositories und MySQL Datenbanken oder MongoDBs bestellen. Weiter kann man weitere Mitarbeiter auf die Projekte berechtigen, um an diesen Projekten zu arbeiten. Man kann z.B. nach dem Erstellen des Namespaces auch die Quota davon anpassen. Das heisst wie viele Ressourcen dieser Namespace verwenden darf. Dieser Service wurde für die interne wie auch externe Entwicklungsumgebung entwickelt. Das Backend wurde mit Kotlin und Spring Boot in einer Microservice Architektur umgesetzt und das Frontend mit Angular. Wenn ein Service einen anderen benachrichtigen muss und aktuelle Daten senden möchte, haben wir Kafka im Einsatz, um Nachrichten zu senden und die Services, welche diese Benachrichtigung benötigen, können diese Nachrichten abonnieren."
+  },
+  "privateProjects": {
+    "title": "Private Projekte",
+    "content": [
+      {
+        "title": "Notify (In Entwicklung und Planung)",
+        "description": "Notify ist ein simpler sicherer Weg, um Nachrichten aus dem Frontend zu senden. Du kannst Slack oder Mailgun einbinden, um Nachrichten zu senden. Der grosse Vorteil ist, dass du keine API-Keys im Frontend angeben musst, da diese sonst öffentlich zugänglich wären. Notify arbeitet mit einer Host-Verifizierung, das heisst, nur ein spezifischer Host, welcher freigegeben wurde, darf Nachrichten darüber versenden. Du kannst auch unlimitiert Workflows und Nachrichtenvorlagen im Notify Backend erstellen. Der Code ist Open Source und die erste Version wurde auch bereits veröffentlicht. In der Zukunft ist geplant ein Service anzubieten, damit man vollständig verwaltete Instanzen verwenden kann (ähnlich wie Zitadel oder Plausible). Aktuell wird es von mir auf meinem Kubernetes Cluster verwendet.",
+        "imagePath": "/images/notify.jpeg",
+        "href": "https://github.com/m-mattia-m/Notify"
+      },
+      {
+        "title": "Formtion (In Entwicklung and Vermarktung)",
+        "description": "Formtion generiert automatisch Formulare, welche zu deiner Notion Datenbank passt. Du kannst Dateien hochladen und diese mit deinem externen Cloud Storage Anbieter wie Google Drive, OneDrive, Dropbox verbinden, um eine Datei da hochzuladen. Die erste Beta Version ist bereits zugänglich und hat registrierte Benutzer, jedoch ist ein grosses Update in Arbeit, welches viele Verbesserungen und neue Features enthält. Aktuell ist Formtion auf meinem Kubernetes Cluster gehostet.",
+        "imagePath": "/images/formtion.png",
+        "href": "https://formtion.app"
+      },
+      {
+        "title": "Bookspread (Beendet)",
+        "description": "Bookspread ist eine Plattform, auf der Buchautoren nach Verlagen filtern und suchen können. Sie können einen Verlag finden, welcher zu ihnen und ihrem Genre passt. Sobald man einen oder mehrere Verlag/e gefunden hat, wird angezeigt was diese(r) Verlag(e) für Anforderungen haben und man kann diese Anforderungen wie Manuskript, Lebenslauf, ... hochladen und es wird automatisch das richtige Dokument zu dem Verlag gesendet, welcher dies angefordert hat. Mit dieser Plattform haben wir den Jugendprojektwettbewerb von Liechtenstein gewonnen und uns darum für den interregionalen Projektwettbewerb qualifiziert. Dieser interregionale Wettbewerb (St. Gallen - Schweiz, Liechtenstein und Vorarlberg - Österreich) haben wir ebenfalls gewonnen. Danach haben wir angefangen eine Plattform für die Verlage zu erstellen auf welcher die Manuskripte mittels KI analysiert wurde. Ebenfalls wollten wir den Einreichungsprozess mit einer SaaS fundamental verändern. Die zweite Plattform wurde auf meinem Kubernetes Cluster gehostet. Aufgrund von einer fehlenden Nachfrage wurde die Entwicklung und das Projekt eingestellt.",
+        "imagePath": "/images/bookspread.png",
+        "href": "https://bookspread.io"
+      },
+      {
+        "title": "CRM (in Benutzung)",
+        "description": "Ich entwickelte ein Customer Relation Management System (CRM) für einen privaten Kunden und habe es auf seine Bedürfnisse angepasst. Das Ziel war eine Plattform zu entwickeln, auf die er und seine Angestellten Kunden erstellen und bearbeiten, Rapporte erfassen und diese einem Kunden zuordnen können. Als Usermanagementsystem habe ich Zitadel verwendet, welches nach über zwei Jahren immer noch gut funktioniert.",
+        "imagePath": "/images/crm.png",
+        "href": "#"
+      },
+      {
+        "title": "Möbilo (Beendet)",
+        "description": "Bevor meine Kollegen und ich Bookspread entwickelt haben, haben wir Möbilo erstellt. Es sollte eine Seite sein, bei welchem verschiedene Schreinereien ihre Möbel direkt online zusammenstellen lassen können durch ihre Kunden. Daraus sollte eine Offerte generiert werden. Aber nachdem wir mit mehreren Firmen gesprochen haben, kamen wir zum Schluss, dass es kein wirkliches Interesse gab und es nicht wert war weiteren Aufwand hineinzustecken.",
+        "imagePath": "/images/moebilo.png",
+        "href": "#"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Mattia Müggler"
+  }
+}
