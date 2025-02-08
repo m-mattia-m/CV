@@ -65,8 +65,8 @@ interface skill {
           v-for="filter in filters"
           :class="[
             activeFilters.get(filter)
-              ? 'bg-primary text-white'
-              : 'bg-white text-primary',
+              ? 'bg-primary text-light'
+              : 'bg-dark dark:bg-light text-light dark:text-dark',
           ]"
           class="w-fit cursor-pointer flex justify-center rounded-full py-1 px-2 whitespace-nowrap text-xs"
           @click="
