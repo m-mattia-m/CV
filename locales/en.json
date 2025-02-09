@@ -14,6 +14,7 @@
   },
   "skills": {
     "title": "Skills",
+    "emptyFilter": "No skills match this filter.",
     "content": [
       {
         "title": "JavaScript / TypeScript",

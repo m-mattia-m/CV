@@ -14,6 +14,7 @@
   },
   "skills": {
     "title": "Fähigkeiten",
+    "emptyFilter": "Keine Fähigkeiten entsprechen diesem Filter.",
     "content": [
       {
         "title": "JavaScript / TypeScript",

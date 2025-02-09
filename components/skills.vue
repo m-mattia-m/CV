@@ -68,7 +68,7 @@ interface skill {
               ? 'bg-primary text-light'
               : 'bg-dark dark:bg-light text-light dark:text-dark',
           ]"
-          class="w-fit cursor-pointer flex justify-center rounded-full py-1 px-2 whitespace-nowrap text-xs"
+          class="w-fit cursor-pointer flex justify-center py-1 px-2 whitespace-nowrap text-xs"
           @click="
             updateFilter(filter);
             filterSkills();
@@ -81,7 +81,10 @@ interface skill {
         class="w-full flex flex-col justify-between items-start text-dark dark:text-light"
       >
         <!-- for desktop -->
-        <ul class="w-full list-disc py-2 hidden lg:block">
+        <ul
+          v-if="skills.length > 0"
+          class="w-full list-disc py-2 hidden lg:block"
+        >
           <li
             v-for="(skill, index) in skills"
             class="w-full list-['\25A1'] list-inside my-1"
@@ -117,9 +120,12 @@ interface skill {
             </div>
           </li>
         </ul>
+        <div v-else class="w-full py-2 hidden lg:block">
+          <p>{{ $t("skills.emptyFilter") }}</p>
+        </div>
 
         <!-- for mobile -->
-        <ul class="w-full py-2 block lg:hidden">
+        <ul v-if="skills.length > 0" class="w-full py-2 block lg:hidden">
           <li
             v-for="(skill, index) in skills"
             class="w-full py-4 list-none border-b-[0.5px] border-dark dark:border-light"
@@ -153,6 +159,9 @@ interface skill {
             </div>
           </li>
         </ul>
+        <div v-else class="w-full py-2 block lg:hidden">
+          <p>{{ $t("skills.emptyFilter") }}</p>
+        </div>
       </div>
     </div>
   </div>
