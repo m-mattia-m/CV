@@ -36,7 +36,7 @@
       },
       {
         "title": "Java / Kotlin",
-        "description": "In the summer of 2023, we started to rewrite our Go backend in Kotlin on account of having more experienced developers in Kotlin and Java than Go in our company. For this reason, among others, we switched to a Spring-Boot Kotlin application. Before this, I worked with Java and Spring Boot for more or less a year on my apprenticeship.",
+        "description": "In the summer of 2023, we started to rewrite our Go backend in Kotlin on account of our company having more experienced developers in Kotlin and Java than in Go. For this reason, among others, we switched to a Spring-Boot Kotlin application. Before this, I worked with Java and Spring Boot for more or less a year during my apprenticeship.",
         "tags": [
           "Tech",
           "Coding",
