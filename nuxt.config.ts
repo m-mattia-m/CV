@@ -81,7 +81,7 @@ export default defineNuxtConfig({
   },
   plausible: {
     domain: "cv.mattiamueggler.ch",
-    apiHost: "https://plausible.services.mattiamueggler.ch:9443",
+    apiHost: "https://plausible.services.mattiamueggler.ch",
     enabled: true,
     ignoredHostnames: ["localhost"],
   },
