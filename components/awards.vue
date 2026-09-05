@@ -7,7 +7,7 @@
         {{ $t("awards.title") }}
       </h1>
       <div
-        class="w-full flex flex-col justify-center md:justify-around items-center py-8 text-dark dark:text-light"
+        class="w-full flex flex-col justify-center md:justify-around items-center text-dark dark:text-light"
       >
         <div
           v-for="award in $tm('awards.content')"
@@ -20,7 +20,7 @@
             >
               <Carousel :autoplay="4000" :wrap-around="true" class="w-full">
                 <Slide v-for="(image, index) in award.images" :key="index">
-                  <img :alt="award.name" :src="image" class="object-fill" />
+                  <img :alt="award.title" :src="image" class="object-fill" />
                 </Slide>
                 <template #addons>
                   <Navigation />

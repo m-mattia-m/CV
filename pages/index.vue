@@ -2,7 +2,6 @@
 import Home from "~/components/home.vue";
 import PrivateProjects from "~/components/private-projects.vue";
 import MyFooter from "~/components/molecules/myFooter.vue";
-import Awards from "~/components/awards.vue";
 </script>
 
 <template>
@@ -14,6 +13,7 @@ import Awards from "~/components/awards.vue";
       <about />
       <hobbies />
       <skills />
+      <certifications />
       <awards />
       <work />
       <private-projects />

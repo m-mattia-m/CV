@@ -12,26 +12,26 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/i18n": "^8.0.0-rc.8",
-    "@nuxtjs/plausible": "^1.0.2",
-    "@nuxtjs/tailwindcss": "^6.10.1",
-    "autoprefixer": "^10.4.16",
+    "@nuxtjs/plausible": "^4.0.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "autoprefixer": "^10.5.5",
     "nuxt": "^3.13.1",
-    "nuxt-headlessui": "^1.1.4",
-    "nuxt-svgo": "^3.7.0",
-    "postcss": "^8.4.32",
-    "prettier": "^3.1.0",
-    "prettier-plugin-tailwindcss": "^0.5.9",
+    "nuxt-headlessui": "^1.2.2",
+    "nuxt-svgo": "^5.3.0",
+    "postcss": "^8.5.28",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^3.3.6",
     "typescript": "^5.3.3",
-    "vue": "^3.3.10",
+    "vue": "^3.5.42",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.1.5",
-    "gh-pages": "^6.1.0",
+    "@heroicons/vue": "^2.2.0",
+    "gh-pages": "^6.3.0",
     "tailwindcss-hyphens": "^0.1.0",
-    "vue3-carousel-nuxt": "^1.1.0"
+    "vue3-carousel-nuxt": "^1.1.6"
   }
 }

@@ -3,13 +3,17 @@
 <template>
   <div class="w-full flex items-center">
     <div>
-      <h1 class="text-5xl text-dark dark:text-light pb-12">
+      <h1 class="text-5xl text-dark dark:text-light pb-12 mt-64">
         {{ $t("privateProjects.title") }}
       </h1>
-      <div class="w-full flex flex-col py-8">
-        <div v-for="project in $tm('privateProjects.content')" :key="project">
+      <div class="w-full flex flex-col">
+        <div
+          v-for="project in $tm('privateProjects.content')"
+          :key="project"
+          class="flex flex-col md:flex-col h-full mb-16"
+        >
           <h2
-            class="text-3xl underline decoration-1 underline-offset-2 text-dark dark:text-light pt-12 pb-4"
+            class="text-3xl underline decoration-1 underline-offset-2 text-dark dark:text-light pb-4"
           >
             <NuxtLink :to="project.href">{{ project.title }}</NuxtLink>
           </h2>
