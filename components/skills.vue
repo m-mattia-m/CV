@@ -2,9 +2,13 @@
 import type { Ref } from "vue";
 import { MinusIcon, PlusIcon } from "@heroicons/vue/24/outline";
 
-const { t, tm, rt } = useI18n({
-  useScope: "local",
-});
+const { tm } = useI18n();
+
+interface skill {
+  title: string;
+  tags: string[];
+  description: string;
+}
 
 const openSkillIndex: Ref<number> = ref(-1);
 
@@ -13,11 +17,14 @@ function toggleSkillState(index: number) {
   openSkillIndex.value = index;
 }
 
-const skills: Ref<skill[]> = ref(tm("skills.content"));
-const filters: Ref<string[] | undefined> = ref(
-  skills.value
-    .map((skill) => skill.tags)
-    .flat()
+const allSkills = computed<skill[]>(() => {
+  const content = tm("skills.content") as unknown;
+  return Array.isArray(content) ? (content as skill[]) : [];
+});
+
+const filters = computed<string[]>(() =>
+  allSkills.value
+    .flatMap((skill) => skill.tags)
     .filter((tag, index, array) => array.indexOf(tag) === index)
     .sort((a, b) => b.length - a.length),
 );
@@ -26,29 +33,21 @@ const activeFilters: Ref<Map<string, boolean>> = ref(
   new Map<string, boolean>(),
 );
 
+const skills = computed<skill[]>(() => {
+  if (activeFilters.value.size === 0) return allSkills.value;
+  const activeFilterKeys = Array.from(activeFilters.value.keys());
+  return allSkills.value.filter((skill) =>
+    activeFilterKeys.every((filter) => skill.tags.includes(filter)),
+  );
+});
+
 function updateFilter(filterKey: string): void {
   if (activeFilters.value.has(filterKey)) {
     activeFilters.value.delete(filterKey);
   } else {
     activeFilters.value.set(filterKey, true);
   }
-}
-
-function filterSkills(): void {
-  let allSkills = tm("skills.content") as skill[];
-  if (activeFilters.value.size !== 0) {
-    const activeFilterKeys = Array.from(activeFilters.value.keys());
-    allSkills = allSkills.filter((skill) =>
-      activeFilterKeys.every((filter) => skill.tags.includes(filter)),
-    );
-  }
-  skills.value = allSkills;
-}
-
-interface skill {
-  title: string;
-  tags: string[];
-  description: string;
+  openSkillIndex.value = -1;
 }
 </script>
 
@@ -69,10 +68,7 @@ interface skill {
               : 'bg-dark dark:bg-light text-light dark:text-dark',
           ]"
           class="w-fit cursor-pointer flex justify-center py-1 px-2 whitespace-nowrap text-xs"
-          @click="
-            updateFilter(filter);
-            filterSkills();
-          "
+          @click="updateFilter(filter)"
         >
           {{ filter }}
         </li>

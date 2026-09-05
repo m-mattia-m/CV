@@ -73,6 +73,10 @@ export default defineNuxtConfig({
   ],
   i18n: {
     vueI18n: "./i18n.config.ts",
+    bundle: {
+      // recommended by @nuxtjs/i18n v9, it is deprecated in v10
+      optimizeTranslationDirective: false,
+    },
   },
   colorMode: {
     // preference: "system", // light
