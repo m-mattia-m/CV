@@ -172,7 +172,10 @@
         "title": "Berufsmatura",
         "description": "Die Berufsmatura ist ein Schweizweiter Abschluss, der es den Absolventen erlaubt, an einer Fachhochschule zu studieren.",
         "issueDate": "Juli 2026",
-        "images": ["TBD"]
+        "images": [
+          "/images/certifications/BMS-Front.webp",
+          "/images/certifications/BMS-Beleg.webp"
+        ]
       },
       {
         "title": "Cambridge English: Advanced (CAE - C1)",
@@ -180,7 +183,7 @@
         "issueDate": "May 2025",
         "credentialId": "D0940934",
         "verifyUrl": "https://www.cambridgeenglish.org/cmp/verifiers/",
-        "images": ["TBD"]
+        "images": ["/images/certifications/CAE.webp"]
       },
       {
         "title": "Cambridge English: First (FCE - B2)",
@@ -188,19 +191,22 @@
         "issueDate": "June 2024",
         "credentialId": "C6792808",
         "verifyUrl": "https://www.cambridgeenglish.org/cmp/verifiers/",
-        "images": ["TBD"]
+        "images": ["/images/certifications/FCE.webp"]
       },
       {
         "title": "Federally Certified Software Developer (EFZ)",
         "description": "Das Eidgenössische Fähigkeitszeugnis (EFZ) ist eine Schweizweite Qualifikation, die an Personen vergeben wird, die eine Berufsausbildung absolviert und die erforderlichen Prüfungen bestanden haben.",
         "issueDate": "July 2023",
-        "images": ["TBD"]
+        "images": [
+          "/images/certifications/EFZ-Front.webp",
+          "/images/certifications/EFZ-Beleg.webp"
+        ]
       },
       {
         "title": "CYP - BankFIT",
         "description": "Der CYP - BankFIT-Standard ist eine spezialisierte Qualifikation im Bereich Bankwesen und Finanzen.",
         "issueDate": "April 2022",
-        "images": ["TBD"]
+        "images": ["/images/certifications/CYP.webp"]
       }
     ]
   },

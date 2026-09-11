@@ -172,7 +172,10 @@
         "title": "Berufsmatura",
         "description": "The Berufsmatura is a Swiss federal academic qualification which allows the bearers to pursue higher education and going to university.",
         "issueDate": "July 2026",
-        "images": []
+        "images": [
+          "/images/certifications/BMS-Front.webp",
+          "/images/certifications/BMS-Beleg.webp"
+        ]
       },
       {
         "title": "Cambridge English: Advanced (CAE - C1)",
